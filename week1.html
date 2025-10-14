@@ -1,527 +1,823 @@
-<!-- 1xl infra newsletter week1
-subject: Welcome to 1XL Infra: Transforming Dubai’s Real Estate Landscape -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f2ef;
+    }
 
-      body {
-        font-family: "Poppins", sans-serif;
-        background: #f3f2ef;
-        color: #111;
-        min-height: 100vh;
-      }
+    .container {
+      padding: 20px;
+      background-color: #edf5f9;
+    }
 
-      .container {
-        padding: 20px;
-      }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
 
-      .card {
-        max-width: 800px;
-        margin: auto;
-        background: #fff;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      }
+    .header {
+      padding: 20px 0 0 0;
+      text-align: center;
+      background-color: #b01d2b;
+    }
 
-      .header {
-        padding: 20px 20px;
+    .header .logo img {
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: 120px;
+    }
+
+    .real-section {
+      background-color: #9e59ab;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+
+    .real-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .real-text {
+      flex: 2 150px;
+    }
+
+    .real-text h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .real-text p {
+      font-size: 14px;
+      color: white;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .about-section {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .about-section h2 {
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .about-section h2 span {
+      color: #ff7a00;
+      font-weight: 600;
+    }
+
+    .about-section p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 10px auto;
+    }
+
+    .Invest-btn {
+      display: inline-block;
+      border: 2px solid black;
+      background-color: #434343;
+      color: #ffffff !important;
+      padding: 10px 25px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .services-section .Invest-btn {
+      display: inline-block;
+      border: 2px solid black;
+      background-color: #434343;
+      color: #ffffff !important;
+      padding: 10px 25px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .services-section {
+      margin: 0 0 20px 0;
+      padding: 10px 20px 25px 20px;
+      text-align: center;
+      background-color: #f69d49;
+    }
+
+    .services-section h2 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .services-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .service-box {
+      flex: 1;
+      width: 100%;
+      background-color: #fafafa;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .service-box h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .service-box p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .social-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: #eceaea;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-box {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .social-box h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    .social-about p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #3778f6;
+      text-align: center;
+      font-size: 12px;
+      color: #ffffff;
+      padding: 12px 6px;
+    }
+
+    .social_btns a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin: 7px;
+      text-align: center;
+      line-height: 28px;
+      vertical-align: middle;
+    }
+
+    .social_btns img {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .footer-icons {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer-icons div {
+      margin-bottom: 4px;
+    }
+
+    /* --- Responsive Media Queries --- */
+    @media screen and (max-width: 768px) {
+      .real-content {
+        flex-direction: column;
         text-align: center;
-      }
-      .header .logo img {
-        display: block;
-        margin: 0 auto;
-        height: auto;
-      }
-
-      .body {
-        padding: 15px 20px;
-        font-size: 14px;
-        color: #444;
-        line-height: 1.5;
-      }
-
-      .info-box {
-        background: #fff;
-        border-radius: 2px;
-        padding: 50px 20px;
-        max-width: 800px;
-        text-align: center;
-        margin: 20px auto;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .info-box .main-text,
-      .info-box .highlight {
-        font-size: 20px;
-        font-weight: bold;
-        font-family: "Poppins", sans-serif;
-      }
-
-      .info-box .highlight {
-        color: #f7931a;
-      }
-
-      .newsletter-box {
-        background: #111;
-        border-radius: 2px;
-        width: 800px;
-        padding: 50px 50px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        color: #fff;
-        margin: 0 auto;
-      }
-
-      .newsletter-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 25px;
-      }
-
-      .newsletter-header h2 {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
-      }
-
-      .newsletter-header h2 .news {
-        color: #f7931a;
-      }
-
-      .newsletter-nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 500;
-        transition: 0.3s;
-      }
-
-      .newsletter-nav a:hover {
-        color: #f7931a;
-      }
-
-      .newsletter-body {
-        margin-bottom: 25px;
-        font-size: 18px;
-        line-height: 1.5;
-        color: #fff;
-      }
-
-      .newsletter-body span {
-        font-weight: bold;
-        font-size: 22px;
-      }
-
-      .newsletter-body .orange-text {
-        color: #f7931a;
-      }
-      .newsletter-body .black-text {
-        color: #000000;
-      }
-
-      .newsletter-middle {
-        color: #fff;
-        font-size: 16px;
-        margin-bottom: 25px;
-        line-height: 1.6;
-      }
-
-      .newsletter-buttons {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 12px 25px;
-        border-radius: 50px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-
-      .btn-learn {
-        background: #f7931a;
-        color: #fff;
-      }
-
-      .btn-learn:hover {
-        background: #d97b06;
-      }
-
-      .services-section {
-        margin: 20px 0 20px 0;
-        padding: 10px;
-        text-align: center;
-        background-color: #f69d49;
-        border-radius: 2px;
-      }
-
-      .services-section h2 {
-        font-size: 24px;
-        color: #fff;
-        font-weight: bold;
-        margin-bottom: 25px;
-      }
-      .services-heading {
-        color: #fff !important;
-        font-size: 28px;
-        margin-bottom: 30px;
-        font-weight: bold;
       }
 
       .services-flex {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
       }
 
       .service-box {
-        flex: 1;
         width: 100%;
-        background-color: #fafafa;
-        border: 1px solid #e6e6e6;
-        border-radius: 2px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-        transition: all 0.3s ease;
-      }
-
-      .service-box h4 {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #000;
-      }
-      .service-box p {
-        font-size: 14px;
-        color: #555;
-        line-height: 1.5;
-      }
-
-      .services-btn-container {
-        margin-top: 30px;
-      }
-
-      .services-btn {
-        display: inline-block;
-        background-color: #fff;
-        justify-content: center;
-        color: orange;
-        padding: 12px 12px;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        border: 2px solid orange;
-        transition: all 0.3s ease;
-      }
-
-      .services-btn:hover {
-        background-color: orange;
-        color: #fff;
-      }
-      .services-btn a:visited {
-        color: orange;
-      }
-
-      .services-btn a:active {
-        color: orange;
-      }
-      .social-section {
-        margin: 10px 0;
-        background-color: #f9f9f9;
-        padding: 15px;
-        border-radius: 2px;
-      }
-
-      .social-box h3 {
-        font-size: 17px;
-        font-weight: bold;
-        color: orange;
         margin-bottom: 15px;
       }
 
-      .social-about p {
-        font-size: 13px;
-        color: #555;
-        line-height: 1.5;
-        margin-bottom: 10px;
+      .social-section {
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+        gap: 20px !important;
       }
 
-      .footer-icons {
-        margin: 10px 0;
+      /* Fix for OUR SOCIALS icons */
+      .social-box {
+        width: 100% !important;
+        min-width: auto !important;
+        text-align: center !important;
       }
 
       .footer-icons div {
-        margin-bottom: 4px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* allows 4+4 icons in two rows */
+        gap: 10px;
       }
 
       .social_btns a {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        margin: 7px;
-        text-align: center;
-        line-height: 28px;
+        margin: 5px !important;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      .real-section {
+        padding: 20px 10px;
+      }
+
+      .real-text h1 {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+
+      .real-text p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+
+      .Invest-btn {
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 15px;
+      }
+
+      .about-section h2 {
+        font-size: 18px;
+      }
+
+      .about-section p {
+        font-size: 13px;
+        padding: 0 5px;
+      }
+
+      .service-box {
+        padding: 8px;
+        margin: 8px 0;
+      }
+
+      .social-section {
+        padding: 15px;
+        gap: 20px;
+      }
+
+      .social-box h3 {
+        font-size: 16px;
+      }
+
+      .social-about p {
+        font-size: 12px;
+      }
+
+      .social_btns a {
+        width: 26px;
+        height: 26px;
+        margin: 5px;
       }
 
       .social_btns img {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
       }
 
-      .social-rights {
-        display: flex;
-        gap: 70px;
+      .footer {
+        font-size: 11px;
+        padding: 10px 5px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .real-text h1 {
+        font-size: 18px;
+      }
+
+      .about-section h2 {
+        font-size: 16px;
+      }
+
+      .Invest-btn {
         font-size: 13px;
+        padding: 8px 16px;
       }
-
-      hr {
-        border: none;
-        border-top: 1px solid #ddd;
-        width: 100%;
-      }
-
-      @media (max-width: 650px) {
-        .newsletter-box {
-          width: 100%;
-          padding: 15px 20px;
-        }
-
-        .newsletter-header {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .newsletter-nav {
-          margin-top: 8px;
-        }
-      }
-    </style>
+    }
+  </style>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="card">
-        <div class="body">
-          <div class="newsletter-box">
-            <table
-              width="100%"
-              cellpadding="0"
-              cellspacing="0"
-              border="0"
-              style="margin-bottom: 20px"
-            >
-              <tr>
-                <td align="center" style="padding: 10px 20px">
-                  <img
-                    src="{client_logo_url}"
-                    alt="Logo"
-                    width="100"
-                    style="display: block"
-                  />
-                </td>
-              </tr>
-            </table>
-
-            <div class="newsletter-body">
-              <span class="orange-text">Transforming Dubai’s</span>
-              <span class="white-text">Skyline with Premium Properties</span>
-            </div>
-
-            <div class="newsletter-middle">
-              Discover high-value investment opportunities with 1XL Infra. We
-              deliver luxury, sustainability, and long-term growth, shaping the
-              future of Dubai’s real estate market for investors like you.
-            </div>
-
-            <div style="text-align: center; margin: 20px 0">
-              <a
-                href="https://{web_address}"
-                target="_blank"
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #edf5f9;
+    "
+  >
+    <table
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      bgcolor="#edf5f9"
+    >
+      <tr>
+        <td align="center" style="padding: 20px">
+          <table
+            class="card"
+            width="600"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              max-width: 600px;
+              margin: auto;
+              background: #ffffff;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                align="center"
                 style="
-                  display: inline-block;
-                  padding: 12px 25px;
-                  border-radius: 50px;
-                  font-weight: 600;
-                  text-decoration: none;
-                  background-color: #f7931a;
-                  color: #ffffff !important;
+                  padding: 20px 0 0 0;
+                  text-align: center;
+                  background-color: #111;
                 "
               >
-                Start Your Investment Journey
-              </a>
-            </div>
-          </div>
-
-          <div class="info-box">
-            <p style="color: #000000">
-              <span class="main-text">Delivering Excellence,</span>
-              <span class="highlight">Building Futures</span>
-              <br /><br />
-              Our mission is to create real estate developments that offer
-              sustainable growth, strong returns, and contribute to the
-              evolution of Dubai’s skyline.
-            </p>
-            <div style="text-align: center; margin: 20px 0">
-              <a
-                href="https://1xlinfra.com/about-us"
-                target="_blank"
+                <img
+                  src="{client_logo_url}"
+                  alt="Logo"
+                  style="
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 120px;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
                 style="
-                  display: inline-block;
-                  padding: 12px 25px;
-                  border-radius: 50px;
-                  font-weight: 600;
-                  text-decoration: none;
-                  background-color: #000000;
-                  color: #ffffff !important;
+                  background-color: #111;
+                  padding: 30px 20px 20px;
+                  margin-bottom: 20px;
                 "
               >
-                Learn More
-              </a>
-            </div>
-          </div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center">
+                    <h1
+  style="
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 0;
+  "
+>
+  <span style="color: #b01d2b;">1XL Avenue:</span>
+  <span style="color: white;"> Premium Commercial Spaces for Growth</span>
+</h1>
 
-          <div class="services-section">
-            <h2 class="services-heading">
-              Unlock High-Value Investment Opportunities
-            </h2>
-            <div class="services-flex">
-              <div class="service-box">
-                <div class="newsletter-body">
-                  <span class="black-text">Premium Real </span
-                  ><span class="orange-text">Estate</span>
-                  <p>
-                    Invest in luxury properties in prime locations with high
-                    potential for capital appreciation.
-                  </p>
-                </div>
-              </div>
+                      <p
+                        style="
+                          font-size: 14px;
+                          color: white;
+                          line-height: 1.6;
+                          margin-bottom: 25px;
+                          text-align: center;
+                          max-width: 500px;
+                          margin-left: auto;
+                          margin-right: auto;
+                        "
+                      >
+                       Discover high-value investment opportunities with 1XL Infra. We deliver luxury, sustainability, and long-term growth, shaping the future of Dubai’s real estate market for investors like you.
+                      </p>
+                    <a
+  href="https://{web_address}"
+  target="_blank"
+  style="
+    display: inline-block;
+    border: 2px solid #b01d2b;
+    background-color: #b01d2b;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+  "
+>
+  Start Your Investment Journey
+</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-              <div class="service-box">
-                <div class="newsletter-body">
-                  <span class="black-text">Proven Track </span
-                  ><span class="orange-text">Record</span>
-                  <p>
-                    Benefit from our three years of successful project
-                    completions and strong investor returns.
-                  </p>
-                </div>
-              </div>
-
-              <div class="service-box">
-                <div class="newsletter-body">
-                  <span class="black-text">Sustainable </span
-                  ><span class="orange-text">Growth</span>
-                  <p>
-                    Join us in creating sustainable communities with long-term
-                    value, ensuring steady rental yields.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="services-btn-container">
-              <a
-                href="https://{web_address}"
-                target="_blank"
-                style="
-                  display: inline-block;
-                  background-color: #ffffff;
-                  color: orange !important;
-                  padding: 12px 12px;
-                  border-radius: 50px;
-                  text-decoration: none;
-                  font-weight: bold;
-                  font-size: 14px;
-                  border: 2px solid orange;
-                  transition: all 0.3s ease;
-                "
-                >Start Your Investment Journey</a
-              >
-            </div>
-          </div>
-
-          <div class="social-section">
-            <div class="social-box social-about">
-              <h3>ABOUT US</h3>
-              <p>
-                1XL Infra is a leading real estate development company in Dubai,
-                renowned for delivering high-value residential and commercial
-                properties.
-              </p>
-              <h3>Address</h3>
-              <p>Floor 141, Burj Khalifa, Dubai,<br />P.O. Box No. - 74242</p>
-            </div>
-
-            <div class="social-box">
-              <h3>OUR SOCIALS</h3>
-              <div class="footer-icons social_btns">
-                <div>
-                  <a href="https://www.instagram.com/1XLInfra/" target="_blank">
-                    <img src="{instagram}" alt="Instagram" title="Instagram" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/1XLInfra/"
-                    target="_blank"
+            <!-- Body -->
+            <tr>
+              <td align="center" style="padding: 30px 15px">
+                <h2
+                  style="
+                    font-size: 24px;
+                    color: #000;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    margin-top: 0;
+                  "
+                >
+                  Delivering Excellence, <span
+                    style="color: #b01d2b; font-weight: 600"
                   >
-                    <img src="{linkedin}" alt="Linkedin" title="Linkedin" />
-                  </a>
-                  <a href="https://www.facebook.com/1XLInfra/" target="_blank">
-                    <img src="{facebook}" alt="Facebook" title="Facebook" />
-                  </a>
-                  <a href="https://www.youtube.com/@1XLInfra" target="_blank">
-                    <img src="{youtube}" alt="Youtube" title="Youtube" />
-                  </a>
-                </div>
-                <div>
-                  <a href="https://x.com/1XLInfra/" target="_blank">
-                    <img src="{x}" alt="X" title="X" />
-                  </a>
-                  <a href="https://www.threads.com/@1XLInfra/" target="_blank">
-                    <img src="{threads}" alt="Threads" title="Threads" />
-                  </a>
-                  <a
-                    href="https://www.quora.com/profile/1XLInfra/"
-                    target="_blank"
+                    Building Futures</span
                   >
-                    <img src="{quora}" alt="Quora" title="Quora" />
-                  </a>
-                  <a href="https://www.pinterest.com/1xlinfra/" target="_blank">
-                    <img src="{pinterest}" alt="Pinterest" title="Pinterest" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <hr />
-            <div class="social-rights">
-              <p>
-                ©
+                </h2>
+                <p
+                  style="
+                    color: #666;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                  "
+                >
+                  Our mission is to create real estate developments that offer sustainable growth, strong returns, and contribute to the evolution of Dubai’s skyline.
+                </p>
                 <a
-                  href="https://{web_address}"
+                  href="https://1xlinfra.com/about-us"
                   target="_blank"
-                  style="color: #3778f6; text-decoration: underline"
-                  >1XLInfra.com</a
-                >. All Rights Reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                  style="
+                    display: inline-block;
+                    border: 2px solid black;
+                    background-color: #434343;
+                    color: #ffffff;
+                    padding: 10px 25px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    text-align: center;
+                    transition: background 0.3s ease;
+                  "
+                  >Learn More
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  padding: 25px 20px;
+                  text-align: center;
+                  background-color: #f69d49;
+                "
+              >
+                <h2
+                  style="
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    margin-top: 0;
+                  "
+                >
+                  Unlock High-Value Investment Opportunities
+                </h2>
+                <table
+                  class="three-columns"
+                  width="100%"
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                >
+                  <tr>
+                    <td
+                      class="column"
+                      width="33.33%"
+                      valign="top"
+                      style="padding: 10px"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
+                          background-color: #fafafa;
+                          border: 1px solid #e6e6e6;
+                          border-radius: 10px;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 10px">
+                            <h4
+                              style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                                color: #000;
+                                margin-top: 0;
+                              "
+                            >
+                              Premium Real Estate
+                            </h4>
+                            <p
+                              style="
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 1.5;
+                                margin: 0;
+                              "
+                            >
+                             Invest in luxury properties in prime locations with high potential for capital appreciation.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="column"
+                      width="33.33%"
+                      valign="top"
+                      style="padding: 10px"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
+                          background-color: #fafafa;
+                          border: 1px solid #e6e6e6;
+                          border-radius: 10px;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 10px">
+                            <h4
+                              style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                                color: #000;
+                                margin-top: 0;
+                              "
+                            >
+                             Proven Track Record
+                            </h4>
+                            <p
+                              style="
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 1.5;
+                                margin: 0;
+                              "
+                            >
+                              Benefit from our three years of successful project completions and strong investor returns.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="column"
+                      width="33.33%"
+                      valign="top"
+                      style="padding: 10px"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
+                          background-color: #fafafa;
+                          border: 1px solid #e6e6e6;
+                          border-radius: 10px;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 10px">
+                            <h4
+                              style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 15px;
+                                color: #000;
+                                margin-top: 0;
+                              "
+                            >
+                              Sustainable Growth
+                            </h4>
+                            <p
+                              style="
+                                font-size: 14px;
+                                color: #555;
+                                line-height: 1.5;
+                                margin: 0;
+                              "
+                            >
+                              Join us in creating sustainable communities with long-term value, ensuring steady rental yields.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <a
+    href="https://{web_address}"
+    target="_blank"
+    style="
+      display: inline-block;
+      background-color: #ffffff;
+      color: orange !important;
+      padding: 12px 12px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      border: 2px solid orange;
+      transition: all 0.3s ease;
+    "
+  >Start Your Investment Journey</a>
+              </td>
+            </tr>
+            
+            <tr>
+              <td style="background-color: #eceaea; padding: 20px">
+                <table
+                  class="two-columns"
+                  width="100%"
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                >
+            <!-- Footer Section -->
+            <tr>
+              <td style="padding: 20px 30px; text-align: center; font-size: 12px; color: #F9F9F9 ; background-color: #F9F9F9 ;">
+             
+              <table class="footer-columns" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                  <tr>
+                    <!-- Column 1: Logo & About -->
+                    <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
+                   
+                      <h4 style="margin: 45px 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308;">About Us</h4>
+                      <p style="margin: 0; font-size: 12px; line-height: 18px; color: #000000;">
+                        1XL Infra is a leading real estate development company in Dubai, renowned for delivering high-value residential and commercial properties.
+                      </p>
+                    </td>
+                    <!-- Column 2: Address -->
+                    <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
+                      <h4 style="margin: 45px 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308;">Address</h4>
+                      <p style="margin: 0; font-size: 12px; line-height: 18px; color: #000000;">
+                        Floor 141, Burj Khalifa, Dubai,<br>P.O. Box No. - 74242
+                      </p>
+                    </td>
+                    <!-- Column 3: Socials -->
+                    <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
+                       <h4 style="margin: 45px 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308;">Our Socials</h4>
+                       <table class="social-icons" cellpadding="0" cellspacing="0" border="0">
+                         <tr>
+                           <td style="padding: 0 15px 10px 0;">
+                             <a href="https://www.instagram.com/1XLInfra/" target="_blank">
+                               <img src="{instagram}" width="15" height="15" alt="Instagram" style="display: block;" />
+                             </a>
+                           </td>
+                           <td style="padding: 0 15px 10px 0;">
+                             <a href="https://www.linkedin.com/company/1xlinfra" target="_blank">
+                               <img src="{linkedin}" width="15" height="15" alt="LinkedIn" style="display: block;" />
+                             </a>
+                           </td>
+                           <td style="padding: 0 15px 10px 0;">
+                    
+                             <a href="https://www.facebook.com/1XLInfra/" target="_blank">
+                               <img src="{facebook}" width="15" height="15" alt="Facebook" style="display: block;" />
+                             </a>
+                           </td>
+                           <td style="padding: 0 15px 10px 0;">
+                             <a href="https://www.youtube.com/@1XLInfra" target="_blank">
+                               <img src="{youtube}" width="15" height="15" alt="YouTube" style="display: block;" />
+                             </a>
+                           </td>
+                         </tr>
+                         <tr>
+                            <td style="padding: 0 15px 10px 0;">
+                              <a href="https://x.com/1XLInfra/" target="_blank">
+                                <img src="{x}" width="15" height="15" alt="X" style="display: block;" />
+                              </a>
+                            </td>
+                            
+                            <td style="padding: 0 15px 10px 0;">
+                              <a href="https://www.threads.com/@1XLInfra/" target="_blank">
+                                <img src="{threads}" width="15" height="15" alt="Threads" style="display: block;" />
+                              </a>
+                            </td>
+                            <td style="padding: 0 15px 10px 0;">
+                              <a href="https://www.pinterest.com/1xlinfra/" target="_blank">
+                                <img src="{pinterest}" width="15" height="15" alt="Pinterest" style="display: block;" />
+                              </a>
+                            </td>
+                         </tr>
+                       </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Copyright -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td style="padding: 20px 0 0; text-align: center; font-size: 12px; color: #000000; border-top: 1px solid #222;">
+                      © <a href="https://{web_address}" target="_blank" style="color: #000000; text-decoration: none;">1XLInfra.com</a>. All Rights Reserved.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
