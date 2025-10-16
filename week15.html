@@ -111,6 +111,7 @@
         margin-top: 20px;
         text-align: center;
         transition: background 0.3s ease;
+<<<<<<< Updated upstream
       }
 
       .services-section .Invest-btn {
@@ -415,6 +416,327 @@
           margin: 25px auto 10px auto !important;
         }
       }
+=======
+      }
+
+      .services-section .Invest-btn {
+        display: inline-block;
+        border: 2px solid black;
+        background-color: #434343;
+        color: #ffffff !important;
+        padding: 10px 25px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+        transition: background 0.3s ease;
+      }
+
+      .services-section {
+        margin: 0 0 20px 0;
+        padding: 10px 20px 25px 20px;
+        text-align: center;
+        background-color: #f69d49;
+      }
+
+      .services-section h2 {
+        font-size: 24px;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .services-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .service-box {
+        flex: 1;
+        width: 100%;
+        background-color: #fafafa;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        transition: all 0.3s ease;
+      }
+
+      .service-box h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000;
+      }
+
+      .service-box p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      .social-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        background-color: #eceaea;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .social-box {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .social-box h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: orange;
+        margin-bottom: 15px;
+      }
+
+      .social-about p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        background-color: #3778f6;
+        text-align: center;
+        font-size: 12px;
+        color: #ffffff;
+        padding: 12px 6px;
+      }
+
+      .social_btns a {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin: 7px;
+        text-align: center;
+        line-height: 28px;
+        vertical-align: middle;
+      }
+
+      .social_btns img {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+
+      .footer-icons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer-icons div {
+        margin-bottom: 4px;
+      }
+
+      /* --- Responsive Media Queries --- */
+      @media screen and (max-width: 768px) {
+        .real-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .services-flex {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .service-box {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .social-section {
+          flex-direction: column;
+          align-items: center !important;
+          text-align: center;
+          gap: 20px !important;
+        }
+
+        /* Fix for OUR SOCIALS icons */
+        .social-box {
+          width: 100% !important;
+          min-width: auto !important;
+          text-align: center !important;
+        }
+
+        .footer-icons div {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap; /* allows 4+4 icons in two rows */
+          gap: 10px;
+        }
+
+        .social_btns a {
+          margin: 5px !important;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          padding: 10px;
+        }
+
+        .real-section {
+          padding: 20px 10px;
+        }
+
+        .real-text h1 {
+          font-size: 20px;
+          line-height: 1.3;
+        }
+
+        .real-text p {
+          font-size: 13px;
+          line-height: 1.5;
+          margin-bottom: 15px;
+        }
+
+        .Invest-btn {
+          font-size: 14px;
+          padding: 8px 20px;
+          border-radius: 15px;
+        }
+
+        .about-section h2 {
+          font-size: 18px;
+        }
+
+        .about-section p {
+          font-size: 13px;
+          padding: 0 5px;
+        }
+
+        .service-box {
+          padding: 8px;
+          margin: 8px 0;
+        }
+
+        .social-section {
+          padding: 15px;
+          gap: 20px;
+        }
+
+        .social-box h3 {
+          font-size: 16px;
+        }
+
+        .social-about p {
+          font-size: 12px;
+        }
+
+        .social_btns a {
+          width: 26px;
+          height: 26px;
+          margin: 5px;
+        }
+
+        .social_btns img {
+          width: 14px;
+          height: 14px;
+        }
+
+        .footer {
+          font-size: 11px;
+          padding: 10px 5px;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .real-text h1 {
+          font-size: 18px;
+        }
+
+        .about-section h2 {
+          font-size: 16px;
+        }
+
+        .Invest-btn {
+          font-size: 13px;
+          padding: 8px 16px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+      .card {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+
+      .three-columns .column,
+      .footer-columns .column {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        /* text-align: center !important; */
+         padding: 0px 0px !important;
+      }
+       .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+
+      .social-h4 {
+        margin-left: 20px !important;
+      }
+
+      .footer-columns .column {
+       
+        padding: 10px 0 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      a {
+        font-size: inherit !important;
+      }
+
+      td {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      hr {
+        margin: 15px 0 !important;
+      }
+
+      .social-icons {
+         display: inline-block !important;
+          justify-content: center !important;
+          align-items: center !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+      }
+
+      .social-icons tr,
+      .social-icons td {
+         text-align: left !important;
+      }
+
+      .footer-heading {
+        margin: 10px auto 10px auto !important;
+      }
+    }
+>>>>>>> Stashed changes
     </style>
   </head>
 
@@ -451,26 +773,34 @@
             "
           >
             <!-- Header -->
+            <!-- Website Logo -->
             <tr>
               <td
                 align="center"
+<<<<<<< Updated upstream
                 style="
                   padding: 20px 0 0 0;
                   text-align: center;
                   background: linear-gradient(to left, #012262, #3778f6);
                 "
+=======
+                style="padding: 35px 20px 0 20px; text-align: center;  background: linear-gradient(to left, #012262, #3778f6);"
+>>>>>>> Stashed changes
               >
-                <img
-                  src="{client_logo_url}"
-                  alt="Logo"
-                  style="
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                    max-width: 120px;
-                  "
-                />
+                <a href="https://Infra.1XL.com/" target="_blank">
+                  <img
+                    src="{client_logo_url}"
+                    alt="Logo"
+                    width="120"
+                    style="
+                      max-width: 120px;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                /></a>
               </td>
+            </tr>
             </tr>
             <tr>
               <td
@@ -561,6 +891,7 @@
                     line-height: 1.6;
                     max-width: 500px;
                     margin: 10px auto;
+  text-align: justify;
                   "
                 >
                   With Dubai’s expanding population and diverse expatriate
@@ -591,33 +922,88 @@
             </tr>
 
             <tr>
+  <td
+    style="
+      padding: 25px 20px;
+      text-align: center;
+      background-color: #f2f6f7;
+    "
+  >
+    <h2
+      style="
+        font-size: 24px;
+        color: #071c1f;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 0;
+      "
+    >
+      The Rise of Sustainable and Smart Homes
+    </h2>
+
+    <table
+      class="three-columns"
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      style="table-layout: fixed"
+    >
+      <tr>
+        <!-- CARD 1 -->
+        <td width="33.33%" valign="top" style="padding: 10px;">
+          <table
+            width="100%"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              background-color: #ffffff;
+              text-align: center;
+              height: 100%;
+            "
+          >
+            <tr>
               <td
                 style="
+<<<<<<< Updated upstream
                   padding: 25px 20px;
                   text-align: center;
                   background-color: #f2f6f7;
                   color: #ffffff;
+=======
+                  padding: 10px;
+                  height: 275px;
+                  vertical-align: top;
+>>>>>>> Stashed changes
                 "
               >
-                <h2
+                <h4
                   style="
+<<<<<<< Updated upstream
                     font-size: 24px;
                     color: #071c1f;
+=======
+                    font-size: 18px;
+>>>>>>> Stashed changes
                     font-weight: bold;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
+                    color: #071c1f;
                     margin-top: 0;
                   "
                 >
-                  The Rise of Sustainable and Smart Homes
-                </h2>
-                <table
-                  class="three-columns"
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  style="table-layout: fixed"
+                  Eco-Friendly Construction
+                </h4>
+                <p
+                  style="
+                    font-size: 14px;
+                    color: #5c727d;
+                    line-height: 1.5;
+                    margin: 0;
+                    text-align: justify;
+                  "
                 >
+<<<<<<< Updated upstream
                   <tr>
                     <td
                       class="column"
@@ -792,8 +1178,120 @@
                   "
                   >Explore More
                 </a> -->
+=======
+                  Developers are prioritising sustainable building materials and
+                  energy-efficient systems to reduce environmental impact and
+                  operational costs.
+                </p>
+>>>>>>> Stashed changes
               </td>
             </tr>
+          </table>
+        </td>
+
+        <!-- CARD 2 -->
+        <td width="33.33%" valign="top" style="padding: 10px;">
+          <table
+            width="100%"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              background-color: #ffffff;
+              text-align: center;
+              height: 100%;
+            "
+          >
+            <tr>
+              <td
+                style="
+                  padding: 10px;
+                  height: 275px;
+                  vertical-align: top;
+                "
+              >
+                <h4
+                  style="
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #071c1f;
+                    margin-top: 0;
+                  "
+                >
+                  Smart Home Integration
+                </h4>
+                <p
+                  style="
+                    font-size: 14px;
+                    color: #5c727d;
+                    line-height: 1.5;
+                    margin: 0;
+                    text-align: justify;
+                  "
+                >
+                  Smart technologies, including automation for lighting, climate
+                  control, and security, enhance comfort and convenience for
+                  residents.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- CARD 3 -->
+        <td width="33.33%" valign="top" style="padding: 10px;">
+          <table
+            width="100%"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              background-color: #ffffff;
+              text-align: center;
+              height: 100%;
+            "
+          >
+            <tr>
+              <td
+                style="
+                  padding: 10px;
+                  height: 275px;
+                  vertical-align: top;
+                "
+              >
+                <h4
+                  style="
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #071c1f;
+                    margin-top: 0;
+                  "
+                >
+                  Future-Ready Living
+                </h4>
+                <p
+                  style="
+                    font-size: 14px;
+                    color: #5c727d;
+                    line-height: 1.5;
+                    margin: 0;
+                    text-align: justify;
+                  "
+                >
+                  Sustainably designed homes with smart features are becoming
+                  highly sought after for their long-term investment value.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
             <tr>
               <td align="center" style="padding: 30px 15px">
                 <h2
@@ -847,7 +1345,11 @@
             <tr>
               <td
                 style="
+<<<<<<< Updated upstream
                   padding: 20px 25px;
+=======
+                  padding: 20px 30px 20px 50px;
+>>>>>>> Stashed changes
                   text-align: center;
                   font-size: 12px;
                   color: #000000;
@@ -857,6 +1359,7 @@
                 <table
                   class="footer-columns"
                   width="100%"
+<<<<<<< Updated upstream
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
@@ -866,13 +1369,30 @@
                     <td
                       class="column"
                       width="33.33%"
+=======
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="margin: 0 auto; text-align: center"
+                >
+                  <tr style="max-width: 100%">
+                    <!-- Column 1: About -->
+                    <td
+                      class="column"
+                      width="45%"
+>>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
+<<<<<<< Updated upstream
                           margin: 45px 0 5px 0;
+=======
+                          margin: 15px 0 5px 0;
+>>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -897,14 +1417,22 @@
                     <!-- Column 2: Address -->
                     <td
                       class="column"
+<<<<<<< Updated upstream
                       width="33.33%"
+=======
+                      width="45%"
+>>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
+<<<<<<< Updated upstream
                           margin: 45px 0 5px 0;
+=======
+                          margin: 15px 0 5px 0;
+>>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -927,14 +1455,22 @@
                     <!-- Column 3: Socials -->
                     <td
                       class="column"
+<<<<<<< Updated upstream
                       width="33.33%"
+=======
+                      width="10%"
+>>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
+<<<<<<< Updated upstream
                           margin: 45px 0 5px 0;
+=======
+                          margin: 15px 0 5px 0;
+>>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -947,6 +1483,11 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
+<<<<<<< Updated upstream
+=======
+                        align="center"
+                        style="margin: 0 auto; text-align: center"
+>>>>>>> Stashed changes
                       >
                         <tr>
                           <td style="padding: 0 15px 10px 0">
@@ -956,11 +1497,19 @@
                             >
                               <img
                                 src="{instagram}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="Instagram"
                                 style="display: block"
                                 title="Instagram"
+=======
+                                alt="Instagram"
+                                style="display: block"
+                                title="Instagram"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -971,11 +1520,19 @@
                             >
                               <img
                                 src="{linkedin}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="LinkedIn"
                                 style="display: block"
                                 title="LinkedIn"
+=======
+                                alt="LinkedIn"
+                                style="display: block"
+                                title="LinkedIn"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -986,11 +1543,19 @@
                             >
                               <img
                                 src="{facebook}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="Facebook"
                                 style="display: block"
                                 title="Facebook"
+=======
+                                alt="Facebook"
+                                style="display: block"
+                                title="Facebook"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1001,11 +1566,19 @@
                             >
                               <img
                                 src="{youtube}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="YouTube"
                                 style="display: block"
                                 title="YouTube"
+=======
+                                alt="YouTube"
+                                style="display: block"
+                                title="YouTube"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1015,11 +1588,19 @@
                             <a href="https://x.com/1XLInfra/" target="_blank">
                               <img
                                 src="{x}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="X"
                                 style="display: block"
                                 title="X"
+=======
+                                alt="X"
+                                style="display: block"
+                                title="X"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1030,11 +1611,19 @@
                             >
                               <img
                                 src="{threads}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="Threads"
                                 style="display: block"
                                 title="Threads"
+=======
+                                alt="Threads"
+                                style="display: block"
+                                title="Threads"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1045,11 +1634,19 @@
                             >
                               <img
                                 src="{pinterest}"
+<<<<<<< Updated upstream
                                 width="17"
                                 height="17"
                                 alt="Pinterest"
                                 style="display: block"
                                 title="Pinterest"
+=======
+                                alt="Pinterest"
+                                style="display: block"
+                                title="Pinterest"
+                                width="18px"
+                                height="18px"
+>>>>>>> Stashed changes
                               />
                             </a>
                           </td>

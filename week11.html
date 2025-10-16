@@ -1,10 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -271,7 +273,8 @@
       .footer-icons div {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* allows 4+4 icons in two rows */
+        flex-wrap: wrap;
+        /* allows 4+4 icons in two rows */
         gap: 10px;
       }
 
@@ -364,110 +367,153 @@
         padding: 8px 16px;
       }
     }
-  </style>
-  </head>
 
-  <body
-    style="
+   @media screen and (max-width: 600px) {
+      .card {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+
+      .three-columns .column,
+      .footer-columns .column {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        /* text-align: center !important; */
+         padding: 0px 0px !important;
+      }
+       .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+
+      .social-h4 {
+        margin-left: 20px !important;
+      }
+
+      .footer-columns .column {
+       
+        padding: 10px 0 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      a {
+        font-size: inherit !important;
+      }
+
+      td {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      hr {
+        margin: 15px 0 !important;
+      }
+
+      .social-icons {
+         display: inline-block !important;
+          justify-content: center !important;
+          align-items: center !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+      }
+
+      .social-icons tr,
+      .social-icons td {
+         text-align: left !important;
+      }
+
+      .footer-heading {
+        margin: 10px auto 10px auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #edf5f9;
-    "
-  >
-    <table
-      width="100%"
-      border="0"
-      cellspacing="0"
-      cellpadding="0"
-      bgcolor="#edf5f9"
-    >
-      <tr>
-        <td align="center" style="padding: 20px">
-          <table
-            class="card"
-            width="600"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            style="
+    ">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#edf5f9">
+    <tr>
+      <td align="center" style="padding: 20px">
+        <table class="card" width="600" border="0" cellspacing="0" cellpadding="0" style="
               max-width: 600px;
               margin: auto;
               background: #ffffff;
               border-radius: 12px;
               overflow: hidden;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            "
-          >
-            <!-- Header -->
-            <tr>
+            ">
+          <!-- Header -->
+          <tr>
               <td
                 align="center"
-                style="
-                  padding: 20px 0 0 0;
-                  text-align: center;
-                  background-color: #9e59ab;
-                "
+                style="padding: 35px 20px 0 20px; text-align: center;  background: linear-gradient(to left, #012262, #3778f6);"
               >
-                <img
-                  src="{client_logo_url}"
-                  alt="Logo"
-                  style="
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                    max-width: 120px;
-                  "
-                />
+                <a href="https://Infra.1XL.com/" target="_blank">
+                  <img
+                    src="{client_logo_url}"
+                    alt="Logo"
+                    width="120"
+                    style="
+                      max-width: 120px;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                /></a>
               </td>
             </tr>
-            <tr>
-              <td
-                style="
-                  background-color: #9e59ab;
+          <tr>
+            <td style="
+                  background: linear-gradient(to left, #012262, #3778f6);
                   padding: 30px 20px 20px;
                   margin-bottom: 20px;
-                "
-              >
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="center">
-                      <h1
-                        style="
+                ">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <h1 style="
                           font-size: 30px;
                           font-weight: 700;
                           color: white;
                           margin-bottom: 15px;
                           text-align: center;
                           margin-top: 0;
-                        "
-                      >
-                        1XL Avenue: Premium Commercial Spaces for Growth
-                      </h1>
-                      <p
-                        style="
+                        "><span style="font-family: Verdana;">1XL</span><span
+                        style="font-weight: 600">
+                        Avenue:</span>
+                      Premium Commercial Spaces for Growth
+                    </h1>
+                    <p style="
                           font-size: 14px;
                           color: white;
                           line-height: 1.6;
                           margin-bottom: 25px;
-                          text-align: center;
+                          text-align: justify;
                           max-width: 500px;
                           margin-left: auto;
                           margin-right: auto;
-                        "
-                      >
-                        Unlock the potential of your business at 1XL Avenue,
-                        Dubai’s premier destination for modern commercial
-                        spaces. Enjoy strategic location, high-quality
-                        amenities, and long-term investment potential.
-                      </p>
-                      <a
-                        href="https://1xlinfra.com/"
-                        target="_blank"
-                        style="
+
+                        ">
+                      Unlock the potential of your business at <span style="font-family: Verdana">1XL</span> Avenue,
+                      Dubai’s premier destination for modern commercial
+                      spaces. Enjoy strategic location, high-quality
+                      amenities, and long-term investment potential.
+                    </p>
+                    <a href="https://infra.1xl.com/" target="_blank" style="
                           display: inline-block;
-                          border: 2px solid black;
-                          background-color: #434343;
+                          background-color: #b01d2b;
                           color: #ffffff;
                           padding: 10px 25px;
                           border-radius: 20px;
@@ -477,302 +523,199 @@
                           margin-top: 20px;
                           text-align: center;
                           transition: background 0.3s ease;
-                        "
-                        >Learn More
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        ">Learn More
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-            <!-- Body -->
-            <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
-                  style="
+          <!-- Body -->
+          <tr>
+            <td align="center" style="padding: 30px 15px">
+              <h2 style="
                     font-size: 24px;
                     color: #000;
                     margin-bottom: 12px;
                     font-weight: 600;
                     margin-top: 0;
-                  "
-                >
-                  Modern, Flexible, High-Quality<span
-                    style="color: #ff7a00; font-weight: 600"
-                  >
-                    Spaces for Your Business</span
-                  >
-                </h2>
-                <p
-                  style="
+                  ">
+                Modern, Flexible, High-Quality<span style="color: #b01d2b; font-weight: 600">
+                  Spaces for Your Business</span>
+              </h2>
+              <p style="
                     color: #666;
                     font-size: 15px;
                     line-height: 1.6;
                     max-width: 500px;
                     margin: 10px auto;
-                  "
-                >
-                  1XL Avenue offers versatile commercial spaces with modern
-                  architecture, flexible layouts, and premium amenities. Whether
-                  you need office space, showrooms, or retail outlets, our
-                  spaces cater to diverse business needs, ensuring an optimal
-                  environment for growth and success.
-                </p>
-                <a
-                  href="https://1xlinfra.com/"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    border: 2px solid black;
-                    background-color: #434343;
-                    color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
-                  "
-                  >Learn More
-                </a>
-              </td>
-            </tr>
+text-align: justify;
+                  ">
+                <span style="font-family: Verdana">1XL</span> Avenue offers versatile commercial spaces with modern
+                architecture, flexible layouts, and premium amenities. Whether
+                you need office space, showrooms, or retail outlets, our
+                spaces cater to diverse business needs, ensuring an optimal
+                environment for growth and success.
+              </p>
+              
+            </td>
+          </tr>
 
-            <tr>
-              <td
-                style="
+          <tr>
+            <td style="
                   padding: 25px 20px;
                   text-align: center;
-                  background-color: #f69d49;
-                "
-              >
-                <h2
-                  style="
+                  background-color: #F2F6F7;
+    color: #ffffff;
+                ">
+              <h2 style="
                     font-size: 24px;
-                    color: #fff;
+                    color: #071c1f;
                     font-weight: bold;
                     margin-bottom: 20px;
                     margin-top: 0;
-                  "
-                >
-                  Location and Connectivity
-                </h2>
-                <table
-                  class="three-columns"
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                >
-                  <tr>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+                  ">
+                Location and Connectivity
+              </h2>
+              <table class="three-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
+                style="table-layout: fixed">
+                <tr>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
+                          min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
-                                color: #000;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Prime Business Location
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            Prime Business Location
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                              "
-                            >
-                              1XL Avenue is strategically located in Dubai
-                              Investment Park, providing easy access to key
-                              business hubs.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+text-align: justify; text-justify: inter-word; hyphens: auto;
+                              ">
+                            <span style="font-family: Verdana">1XL</span> Avenue is strategically located in Dubai
+                            Investment Park, providing easy access to key
+                            business hubs.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                         background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
+                          min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
-                                color: #000;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Accessible Transport Links
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            Accessible Transport Links
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                              "
-                            >
-                              With proximity to major highways and Dubai
-                              International Airport, 1XL Avenue ensures seamless
-                              connectivity.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+text-align: justify; text-justify: inter-word; hyphens: auto;
+                              ">
+                            With proximity to major highways and Dubai
+                            International Airport, <span style="font-family: Verdana">1XL</span> Avenue ensures seamless
+                            connectivity.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
+                          min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
-                                margin-bottom: 15px;
-                                color: #000;
+                                margin-bottom: 25px;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Proximity to Key Facilities
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            Proximity to Key Facilities
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                              "
-                            >
-                              Located near Jebel Ali Port and other key
-                              facilities, this area offers strategic advantages
-                              for global businesses.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <a
-                  href="https://1xlinfra.com/projects"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    border: 2px solid black;
-                    background-color: #434343;
-                    color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
-                  "
-                  >Explore More
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
-                  style="
+text-align: justify; text-justify: inter-word; hyphens: auto;
+                              ">
+                            Located near Jebel Ali Port and other key
+                            facilities, this area offers strategic advantages
+                            for global businesses.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 15px">
+              <h2 style="
                     font-size: 24px;
                     color: #000;
                     margin-bottom: 12px;
                     font-weight: 600;
                     margin-top: 0;
-                  "
-                >
-                  Unlock High Returns with 1XL Avenue
-                </h2>
-                <p
-                  style="
+                  ">
+                Unlock High Returns with <span style="font-family: Verdana">1XL</span> Avenue
+              </h2>
+              <p style="
                     color: #666;
                     font-size: 15px;
                     line-height: 1.6;
                     max-width: 500px;
                     margin: 10px auto;
-                  "
-                >
-                  Investing in 1XL Avenue offers prime commercial spaces with
-                  strong rental yields, long-term growth potential, and a
-                  strategic location in a high-demand area. With flexible
-                  leasing options and competitive pricing, 1XL Avenue offers
-                  investors lucrative returns.
-                </p>
-                <a
-                  href="https://1xlinfra.com/projects"
-                  target="_blank"
-                  style="
+text-align: justify;
+                  ">
+                Investing in <span style="font-family: Verdana">1XL</span> Avenue offers prime commercial spaces with
+                strong rental yields, long-term growth potential, and a
+                strategic location in a high-demand area. With flexible
+                leasing options and competitive pricing, <span style="font-family: Verdana">1XL</span> Avenue offers
+                investors lucrative returns.
+              </p>
+              <a href="https://infra.1xl.com/projects" target="_blank" style="
                     display: inline-block;
-                    border: 2px solid black;
-                    background-color: #434343;
+                    background-color: #b01d2b;
                     color: #ffffff;
                     padding: 10px 25px;
                     border-radius: 20px;
@@ -782,91 +725,122 @@
                     margin-top: 20px;
                     text-align: center;
                     transition: background 0.3s ease;
-                  "
-                  >Learn More
-                </a>
-              </td>
-            </tr>
+                  ">Learn More
+              </a>
+            </td>
+          </tr>
 
+         <!-- Footer Section -->
             <tr>
-              <td style="background-color: #eceaea; padding: 20px">
+              <td
+                style="
+                  padding: 20px 30px 20px 50px;
+                  text-align: center;
+                  font-size: 12px;
+                  color: #000000;
+                  background-color: #eceaea;
+                "
+              >
                 <table
-                  class="two-columns"
+                  class="footer-columns"
                   width="100%"
-                  border="0"
-                  cellspacing="0"
+                  align="center"
                   cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="margin: 0 auto; text-align: center"
                 >
-                  <tr>
+                  <tr style="max-width: 100%">
+                    <!-- Column 1: About -->
                     <td
                       class="column"
-                      width="50%"
+                      width="45%"
                       valign="top"
-                      style="padding: 10px; text-align: left"
+                      style="padding: 10px; text-align: justify; text-justify: inter-word; hyphens: auto;"
                     >
-                      <h3
+                      <h4
+                        class="footer-heading"
                         style="
-                          font-size: 18px;
-                          font-weight: bold;
-                          color: orange;
-                          margin-bottom: 15px;
-                          margin-top: 0;
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
                         "
                       >
-                        ABOUT US
-                      </h3>
+                        About Us
+                      </h4>
                       <p
                         style="
-                          font-size: 13px;
-                          color: #555;
-                          line-height: 1.6;
-                          margin-bottom: 10px;
-                          margin-top: 0;
+                          margin: 0;
+                          font-size: 12px;
+                          line-height: 20px;
+                          color: #000000;
                         "
                       >
-                        1XL Infra is a leading real estate development company
-                        in Dubai, renowned for delivering high-value residential
-                        and commercial properties.
-                      </p>
-                      <p
-                        style="
-                          font-size: 13px;
-                          color: #555;
-                          line-height: 1.6;
-                          margin-bottom: 10px;
-                          margin-top: 0;
-                        "
-                      >
-                        Address - Floor 141, Burj Khalifa, Dubai, <br />P.O. Box
-                        No. - 74242
+                        <span style="font-family: Verdana">1XL</span> Infra is a
+                        leading real estate development company in Dubai,
+                        renowned for delivering high-value residential and
+                        commercial properties.
                       </p>
                     </td>
+                    <!-- Column 2: Address -->
                     <td
                       class="column"
-                      width="50%"
+                      width="45%"
+                      valign="top"
+                      style="padding: 10px; text-align: left;"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
+                        "
+                      >
+                        Address
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          font-size: 12px;
+                          line-height: 20px;
+                          color: #000000;
+                        "
+                      >
+                        Floor 141, Burj Khalifa, Dubai.<br />P.O. Box No. -
+                        74242
+                      </p>
+                    </td>
+                    <!-- Column 3: Socials -->
+                    <td
+                      class="column"
+                      width="10%"
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
-                      <h3
+                      <h4
+                        class="footer-heading"
                         style="
-                          font-size: 18px;
-                          font-weight: bold;
-                          color: orange;
-                          margin-bottom: 15px;
-                          margin-top: 0;
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
                         "
                       >
-                        OUR SOCIALS
-                      </h3>
+                        Our Socials
+                      </h4>
                       <table
                         class="social-icons"
-                        border="0"
-                        cellspacing="0"
                         cellpadding="0"
-                        style="margin: 0"
+                        cellspacing="0"
+                        border="0"
+                        align="center"
+                        style="margin: 0 auto; text-align: center"
                       >
                         <tr>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
                               href="https://www.instagram.com/1XLInfra/"
                               target="_blank"
@@ -874,29 +848,29 @@
                               <img
                                 src="{instagram}"
                                 alt="Instagram"
+                                style="display: block"
                                 title="Instagram"
-                                width="24"
-                                height="24"
-                                title="Instagram"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
                               href="https://www.linkedin.com/company/1XLInfra/"
                               target="_blank"
                             >
                               <img
                                 src="{linkedin}"
-                                alt="Linkedin"
-                                title="Linkedin"
-                                width="24"
-                                height="24"
-                                title="Linkedin"
+                                alt="LinkedIn"
+                                style="display: block"
+                                title="LinkedIn"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
                               href="https://www.facebook.com/1XLInfra/"
                               target="_blank"
@@ -904,43 +878,43 @@
                               <img
                                 src="{facebook}"
                                 alt="Facebook"
+                                style="display: block"
                                 title="Facebook"
-                                width="24"
-                                height="24"
-                                title="Facebook"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
-                              href="https://www.youtube.com/@1XLInfra"
+                              href="https://www.youtube.com/@1XLInfra/"
                               target="_blank"
                             >
                               <img
                                 src="{youtube}"
-                                alt="Youtube"
-                                title="Youtube"
-                                width="24"
-                                height="24"
-                                title="Youtube"
+                                alt="YouTube"
+                                style="display: block"
+                                title="YouTube"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
                         </tr>
                         <tr>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a href="https://x.com/1XLInfra/" target="_blank">
                               <img
                                 src="{x}"
                                 alt="X"
+                                style="display: block"
                                 title="X"
-                                width="24"
-                                height="24"
-                                title="X"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
                               href="https://www.threads.com/@1XLInfra/"
                               target="_blank"
@@ -948,40 +922,25 @@
                               <img
                                 src="{threads}"
                                 alt="Threads"
+                                style="display: block"
                                 title="Threads"
-                                width="24"
-                                height="24"
-                                title="Threads"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
-                          <td style="padding: 0 10px 10px 0">
+                          <td style="padding: 0 15px 10px 0">
                             <a
-                              href="https://www.quora.com/profile/1XLInfra/"
-                              target="_blank"
-                            >
-                              <img
-                                src="{quora}"
-                                alt="Quora"
-                                title="Quora"
-                                width="24"
-                                height="24"
-                                title="Quora"
-                              />
-                            </a>
-                          </td>
-                          <td style="padding: 0 10px 10px 0">
-                            <a
-                              href="https://www.pinterest.com/1xlinfra/"
+                              href="https://www.pinterest.com/1XLInfra/"
                               target="_blank"
                             >
                               <img
                                 src="{pinterest}"
                                 alt="Pinterest"
+                                style="display: block"
                                 title="Pinterest"
-                                width="24"
-                                height="24"
-                                title="Pinterest"
+                                width="18px"
+                                height="18px"
                               />
                             </a>
                           </td>
@@ -990,32 +949,35 @@
                     </td>
                   </tr>
                 </table>
+                <!-- Copyright -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 0 0 0;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #000000;
+                        border-top: 1px solid #222;
+                      "
+                    >
+                      ©
+                      <a
+                        href="https://{web_address}"
+                        target="_blank"
+                        style="color: #000000; text-decoration: none"
+                        >Infra.<span style="font-family: Verdana">1XL</span
+                        >.com</a
+                      >. All Rights Reserved.
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
 
-            <tr>
-              <td
-                style="
-                  background-color: #3778f6;
-                  text-align: center;
-                  font-size: 12px;
-                  color: #ffffff;
-                  padding: 12px 6px;
-                "
-              >
-                ©
-                <a
-                  href="https://{web_address}"
-                  target="_blank"
-                  style="color: #fff; text-decoration: underline"
-                >
-                  1XLInfra.com</a
-                >. All Rights Reserved.
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
 </html>

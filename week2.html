@@ -1,10 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -237,42 +239,44 @@
       margin-bottom: 4px;
     }
 
+
     /* --- Responsive Media Queries --- */
     @media screen and (max-width: 768px) {
+
       .three-columns .column {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding: 10px 0 !important;
-  }
+        display: block !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 10px 0 !important;
+      }
 
-  /* Make the inner table or box tighter */
-  .three-columns .column table {
-    width: 90% !important;
-    margin: 0 auto !important;
-    border-spacing: 0 !important;
-    min-height: 0px !important 
-  }
+      /* Make the inner table or box tighter */
+      .three-columns .column table {
+        width: 90% !important;
+        margin: 0 auto !important;
+        border-spacing: 0 !important;
+        min-height: 0px !important
+      }
 
-  /* Adjust the orange background section */
-  .three-columns {
-    padding: 15px 0 !important;
-  }
+      /* Adjust the orange background section */
+      .three-columns {
+        padding: 15px 0 !important;
+      }
 
-  /* Fix spacing and font sizes inside each card */
-  .three-columns .column td {
-    padding: 10px !important;
-  }
+      /* Fix spacing and font sizes inside each card */
+      .three-columns .column td {
+        padding: 10px !important;
+      }
 
-  .three-columns h3 {
-    font-size: 16px !important;
-    margin-bottom: 5px !important;
-  }
+      .three-columns h3 {
+        font-size: 16px !important;
+        margin-bottom: 5px !important;
+      }
 
-  .three-columns p {
-    font-size: 13px !important;
-    line-height: 1.4 !important;
-  }
+      .three-columns p {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+      }
 
       .real-content {
         flex-direction: column;
@@ -306,7 +310,8 @@
       .footer-icons div {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* allows 4+4 icons in two rows */
+        flex-wrap: wrap;
+        /* allows 4+4 icons in two rows */
         gap: 10px;
       }
 
@@ -399,88 +404,134 @@
         padding: 8px 16px;
       }
     }
-  </style>
-  </head>
 
-  <body
-    style="
+    @media screen and (max-width: 600px) {
+      .card {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+
+      .three-columns .column,
+      .footer-columns .column {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        /* text-align: center !important; */
+         padding: 0px 0px !important;
+      }
+       .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+
+      .social-h4 {
+        margin-left: 20px !important;
+      }
+
+      .footer-columns .column {
+       
+        padding: 10px 0 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      a {
+        font-size: inherit !important;
+      }
+
+      td {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      hr {
+        margin: 15px 0 !important;
+      }
+
+      .social-icons {
+         display: inline-block !important;
+          justify-content: center !important;
+          align-items: center !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+      }
+
+      .social-icons tr,
+      .social-icons td {
+         text-align: left !important;
+      }
+
+      .footer-heading {
+        margin: 10px auto 10px auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #edf5f9;
-    "
-  >
-    <table
-      width="100%"
-      border="0"
-      cellspacing="0"
-      cellpadding="0"
-      bgcolor="#edf5f9"
-    >
-      <tr>
-        <td align="center" style="padding: 20px">
-          <table
-            class="card"
-            width="600"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            style="
+    ">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" style="padding: 20px">
+        <table class="card" width="600" border="0" cellspacing="0" cellpadding="0" style="
               max-width: 600px;
               margin: auto;
               background: #ffffff;
               border-radius: 12px;
               overflow: hidden;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            "
-          >
-            <!-- Header -->
+            ">
+          <!-- Header -->
+          <!-- Website Logo -->
             <tr>
               <td
                 align="center"
-                style="
-                  padding: 20px 0 0 0;
-                  text-align: center;
-                  background-color: #9e59ab;
-                "
+                style="padding: 35px 20px 0 20px; text-align: center;  background: linear-gradient(to left, #012262, #3778f6);"
               >
-                <img
-                  src="{client_logo_url}"
-                  alt="Logo"
-                  style="
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                    max-width: 120px;
-                  "
-                />
+                <a href="https://Infra.1XL.com/" target="_blank">
+                  <img
+                    src="{client_logo_url}"
+                    alt="Logo"
+                    width="120"
+                    style="
+                      max-width: 120px;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                /></a>
               </td>
             </tr>
-            <tr>
-              <td
-                style="
-                  background-color: #9e59ab;
+          <tr>
+            <td style="
+                  background: linear-gradient(to left, #012262, #3778f6);
                   padding: 30px 20px 20px;
                   margin-bottom: 20px;
-                "
-              >
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="center">
-                      <h1
-                        style="
+                ">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <h1 style="
                           font-size: 30px;
                           font-weight: 700;
                           color: white;
                           margin-bottom: 15px;
                           text-align: center;
                           margin-top: 0;
-                        "
-                      >
-                        Stay Ahead: Key Trends in Dubai Real Estate
-                      </h1>
-                      <p
-                        style="
+                        ">
+                      Dubai: The Ultimate Real Estate Destination
+                    </h1>
+                    <p style="
                           font-size: 14px;
                           color: white;
                           line-height: 1.6;
@@ -489,76 +540,44 @@
                           max-width: 500px;
                           margin-left: auto;
                           margin-right: auto;
-                        "
-                      >
-                        Discover the current and future trends shaping Dubai’s property market. From sustainable living to luxury growth, explore how these trends are creating new opportunities for investors.
-                      </p>
-                      <a
-                        href="https://infra.1xl.com/investment-opportunities"
-                        target="_blank"
-                        style="
-                          display: inline-block;
-                          border: 2px solid black;
-                          background-color: #434343;
-                          color: #ffffff;
-                          padding: 10px 25px;
-                          border-radius: 20px;
-                          text-decoration: none;
-                          font-weight: 700;
-                          font-size: 16px;
-                          margin-top: 20px;
-                          text-align: center;
-                          transition: background 0.3s ease;
-                        "
-                        >Explore Investment Opportunities
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        ">
+                      Invest in Dubai’s tax-free real estate market, offering high rental yields, foreign ownership
+                      opportunities, and long-term growth potential for investors.
+                    </p>
 
-            <!-- Body -->
-            <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
-                  style="
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td align="center" style="padding: 30px 15px">
+              <h2 style="
                     font-size: 24px;
                     color: #000;
                     margin-bottom: 12px;
                     font-weight: 600;
                     margin-top: 0;
-                  "
-                >
-                  Affordable Housing: Meeting Dubai’s<span
-                    style="color: #ff7a00; font-weight: 600"
-                  >
-                    Growing Demand</span
-                  >
-                </h2>
-                <p
-                  style="
+                  ">
+                Maximise<span style="color: #002263; font-weight: 600">
+                  Rental Returns</span>
+              </h2>
+              <p style="
                     color: #666;
                     font-size: 15px;
                     line-height: 1.6;
                     max-width: 500px;
                     margin: 10px auto;
-                  "
-                >
-                  1XL Avenue offers versatile commercial spaces with modern
-                  architecture, flexible layouts, and premium amenities. Whether
-                  you need office space, showrooms, or retail outlets, our
-                  spaces cater to diverse business needs, ensuring an optimal
-                  environment for growth and success.
-                </p>
-                <a
-                  href="https://Infra.1XL.com/"
-                  target="_blank"
-                  style="
+                  ">
+                Dubai’s real estate market offers some of the highest rental yields globally, providing investors with
+                consistent returns and stable income opportunities, even in fluctuating markets.
+              </p>
+              <a href="https://Infra.1XL.com/" target="_blank" style="
                     display: inline-block;
-                    border: 2px solid black;
-                    background-color: #434343;
-                    color: #ffffff;
+                    background-color: #b01d2b;
+    color: #ffffff;
                     padding: 10px 25px;
                     border-radius: 20px;
                     text-decoration: none;
@@ -567,334 +586,380 @@
                     margin-top: 20px;
                     text-align: center;
                     transition: background 0.3s ease;
-                  "
-                  >Explore More
-                </a>
-              </td>
-            </tr>
+                  ">Start Investing
+              </a>
+            </td>
+          </tr>
 
-            <tr>
-              <td
-                style="
+          <tr>
+            <td style="
                   padding: 25px 20px;
                   text-align: center;
-                  background-color: #f69d49;
-                "
-              >
-                <h2
-                  style="
+                  background-color: #F2F6F7;
+    color: #ffffff;
+                ">
+              <h2 style="
                     font-size: 24px;
-                    color: #fff;
+                    color: #071c1f;
                     font-weight: bold;
                     margin-bottom: 20px;
                     margin-top: 0;
-                  "
-                >
-                  The Rise of Sustainable and Smart Homes
-                </h2>
-                <table
-                  class="three-columns"
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  style="table-layout: fixed"
-                >
-                  <tr>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+                  ">
+                Dubai: A Global Hub
+              </h2>
+              <table class="three-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
+                style="table-layout: fixed">
+                <tr>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-min-height: 290px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px;vertical-align: top">
-                            <h4
-                              style="
+min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top; ">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
-                                color: #000;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Eco-Friendly Construction
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            Prime Global Gateway
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                              "
-                            >
-                              Developers are prioritising sustainable building materials and energy-efficient systems to reduce environmental impact and operational costs.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+                              ">
+                            Dubai’s strategic location connects East and West, making it a key hub for business and
+                            trade.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-min-height: 290px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px;vertical-align: top">
-                            <h4
-                              style="
+min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top ;">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
-                                color: #000;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Smart Home Integration
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            Economic Resilience
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
 margin: 0;
-                              "
-                            >
-                              Smart technologies, including automation for lighting, climate control, and security, enhance comfort and convenience for residents.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fafafa;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
+                              ">
+                            With strong GDP growth, Dubai’s economy remains stable, even amidst global market
+                            fluctuations.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                          min-height: 290px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px;vertical-align: top">
-                            <h4 
-                              style="
+                          min-height: 255px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top; ">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 15px;
-                                color: #000;
+                                color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Future-Ready Living
-                            </h4>
-                            <p
-                              style="
+                              ">
+                            World-Class Infrastructure
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #555;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                              "
-                            >
-                              Sustainably designed homes with smart features are becoming highly sought after for their long-term investment value.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                
-              </td>
-            </tr>
-            <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
-                  style="
-                    font-size: 24px;
-                    color: #000;
-                    margin-bottom: 12px;
-                    font-weight: 600;
-                    margin-top: 0;
-                  "
-                >
-                  Luxury Properties: A Hot Investment Segment
-                </h2>
-                <p
-                  style="
-                    color: #666;
-                    font-size: 15px;
-                    line-height: 1.6;
-                    max-width: 500px;
-                    margin: 10px auto;
-                  "
-                >
-                  Dubai’s luxury real estate market continues to thrive, attracting global high-net-worth individuals. Waterfront properties and iconic developments remain in high demand, making it a top investment segment with substantial growth potential.
-                </p>
-                <a
-                  href="https://Infra.1XL.com/"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    border: 2px solid black;
-                    background-color: #434343;
-                    color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
-                  "
-                  >Learn More
-                </a>
-              </td>
-            </tr>
-
-             <tr>
-            <td align="center" bgcolor="#ffffff" style="padding: 0; margin: 0;">
-              <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%;">
-                <tr>
-                  <td style="padding: 20px 30px; text-align: center;">
-                    <img src="{client_logo_url}" alt="1XL Infra Logo" width="150"
-                      style="display: block; margin: 0 auto 10px auto;" />
-                    <table class="footer-columns" width="100%" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
-                          <h4
-                            style="margin: 0 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308; font-weight: bold;">
-                            About Us
-                          </h4>
-                          <p style="margin: 0; font-size: 12px; line-height: 18px; color: #444343;">
-                            1XL Infra is a leading real estate development company in Dubai, renowned for delivering
-                            high-value
-                            residential and commercial properties.
+                              ">
+                            Dubai boasts cutting-edge infrastructure, ensuring seamless connectivity for both businesses
+                            and residents.
                           </p>
-                        </td>
-                        <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
-                          <h4
-                            style="margin: 0 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308; font-weight: bold;">
-                            Address
-                          </h4>
-                          <p style="margin: 0; font-size: 12px; line-height: 18px; color: #444343;">
-                            Floor 141, Burj Khalifa, Dubai, <br />P.O. Box No. - 74242
-                          </p>
-                        </td>
-                        <td class="column" width="33.33%" valign="top" style="padding: 10px; text-align: left;">
-                          <h4
-                            style="margin: 0 0 5px 0; font-size: 14px; text-transform: uppercase; color: #da6308; font-weight: bold;">
-                            Our Socials
-                          </h4>
-                          <table class="social-icons" cellpadding="0" cellspacing="0" border="0"
-                            style="margin: 0 auto;">
-                            <tr>
-                              <td style="padding: 0 10px 10px 0;">
-                                <a href="https://www.instagram.com/1XLInfra/" target="_blank">
-                                  <img src="{instagram}" width="22" height="22" alt="Instagram"
-                                    style="display: block;" />
-                                </a>
-                              </td>
-                              <td style="padding: 0 10px 10px 0;">
-                                <a href="https://ae.linkedin.com/company/1xlinfra" target="_blank">
-                                  <img src="{linkedin}" width="22" height="22" alt="LinkedIn" style="display: block;" />
-                                </a>
-                              </td>
-                              <td style="padding: 0 10px 10px 0;">
-                                <a href="https://www.facebook.com/1XLInfra/" target="_blank">
-                                  <img src="{facebook}" width="22" height="22" alt="Facebook" style="display: block;" />
-                                </a>
-                              </td>
-                              <td style="padding: 0 10px 10px 0;">
-                                <a href="https://www.youtube.com/@1XLInfra" target="_blank">
-                                  <img src="{youtube}" width="22" height="22" alt="YouTube" style="display: block;" />
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px 0 0;">
-                                <a href="https://x.com/1XLInfra/" target="_blank">
-                                  <img src="{x}" width="22" height="22" alt="X" style="display: block;" />
-                                </a>
-                              </td>
-                              <td style="padding: 0 10px 0 0;">
-                                <a href="https://www.quora.com/profile/1XLInfra/" target="_blank">
-                                  <img src="{threads}" width="22" height="22" alt="Threads" style="display: block;" />
-                                </a>
-                              </td>
-                              <td style="padding: 0 10px 0 0;">
-                                <a href="https://www.pinterest.com/1xlinfra/" target="_blank">
-                                  <img src="{pinterest}" width="22" height="22" alt="Pinterest"
-                                    style="display: block;" />
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#3778f6">
-                <tr>
-                  <td align="center" style="padding: 10px 0; font-size: 12px; color: #ffffff;">
-                    ©
-                    <a href="https://{web_address}" target="_blank"
-                      style="color: #ffffff; text-decoration: underline;">Infra.1XL.com</a>.
-                    All Rights Reserved.
-                  </td>
-                </tr>
-              </table>
+
             </td>
           </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
+
+          <!-- Footer Section -->
+            <tr>
+              <td
+                style="
+                  padding: 20px 30px 20px 50px;
+                  text-align: center;
+                  font-size: 12px;
+                  color: #000000;
+                  background-color: #eceaea;
+                "
+              >
+                <table
+                  class="footer-columns"
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="margin: 0 auto; text-align: center"
+                >
+                  <tr style="max-width: 100%">
+                    <!-- Column 1: About -->
+                    <td
+                      class="column"
+                      width="45%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
+                        "
+                      >
+                        About Us
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          font-size: 12px;
+                          line-height: 20px;
+                          color: #000000;
+                        "
+                      >
+                        <span style="font-family: Verdana">1XL</span> Infra is a
+                        leading real estate development company in Dubai,
+                        renowned for delivering high-value residential and
+                        commercial properties.
+                      </p>
+                    </td>
+                    <!-- Column 2: Address -->
+                    <td
+                      class="column"
+                      width="45%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
+                        "
+                      >
+                        Address
+                      </h4>
+                      <p
+                        style="
+                          margin: 0;
+                          font-size: 12px;
+                          line-height: 20px;
+                          color: #000000;
+                        "
+                      >
+                        Floor 141, Burj Khalifa, Dubai.<br />P.O. Box No. -
+                        74242
+                      </p>
+                    </td>
+                    <!-- Column 3: Socials -->
+                    <td
+                      class="column"
+                      width="10%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
+                          margin: 15px 0 5px 0;
+                          font-size: 14px;
+                          text-transform: uppercase;
+                          color: #002263;
+                        "
+                      >
+                        Our Socials
+                      </h4>
+                      <table
+                        class="social-icons"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        align="center"
+                        style="margin: 0 auto; text-align: center"
+                      >
+                        <tr>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.instagram.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{instagram}"
+                                alt="Instagram"
+                                style="display: block"
+                                title="Instagram"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.linkedin.com/company/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{linkedin}"
+                                alt="LinkedIn"
+                                style="display: block"
+                                title="LinkedIn"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.facebook.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{facebook}"
+                                alt="Facebook"
+                                style="display: block"
+                                title="Facebook"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.youtube.com/@1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{youtube}"
+                                alt="YouTube"
+                                style="display: block"
+                                title="YouTube"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 0 15px 10px 0">
+                            <a href="https://x.com/1XLInfra/" target="_blank">
+                              <img
+                                src="{x}"
+                                alt="X"
+                                style="display: block"
+                                title="X"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.threads.com/@1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{threads}"
+                                alt="Threads"
+                                style="display: block"
+                                title="Threads"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.pinterest.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{pinterest}"
+                                alt="Pinterest"
+                                style="display: block"
+                                title="Pinterest"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Copyright -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td
+                      style="
+                        padding: 18px 0 0 0;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #000000;
+                        border-top: 1px solid #222;
+                      "
+                    >
+                      ©
+                      <a
+                        href="https://{web_address}"
+                        target="_blank"
+                        style="color: #000000; text-decoration: none"
+                        >Infra.<span style="font-family: Verdana">1XL</span
+                        >.com</a
+                      >. All Rights Reserved.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>
