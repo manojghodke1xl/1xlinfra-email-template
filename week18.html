@@ -1,48 +1,38 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+      }
+      @media screen and (max-width: 600px) {
+        .card {
+          width: 100% !important;
+          border-radius: 0 !important;
         }
-
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: black;
-            padding: 10px 0;
-            border-radius: 0 0 15px 15px;
+        .three-columns .column {
+          width: 100% !important;
+          display: block !important;
+          padding: 10px 0 !important;
         }
-
-        @media screen and (max-width: 600px) {
-            .card {
-                width: 100% !important;
-                border-radius: 0 !important;
-            }
-
-            .two-columns .column,
-            .footer-columns .column {
-                width: 100% !important;
-                max-width: 100% !important;
-                display: block !important;
-               
-                padding: 0px 0 !important;
-            }
-
-           .social-icons {
+        .footer-columns .column {
+          width: 100% !important;
+          display: block !important;
+          padding: 0px 0px !important;
+        }
+        .social-icons {
           display: inline-block !important;
           justify-content: center !important;
           align-items: center !important;
           margin: 0 auto !important;
           text-align: left !important;
         }
+
         .social-icons tr,
         .social-icons td {
           text-align: left !important;
@@ -50,213 +40,278 @@
         .footer-heading {
           margin: 10px auto 10px auto !important;
         }
-        }
+      }
     </style>
-</head>
+    <title>1XL Infra Email</title>
+  </head>
 
-<body style="
+  <body
+    style="
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
-    ">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-        <tr>
-            <td align="center" style="padding: 20px">
-                <table class="card" width="600" border="0" cellspacing="0" cellpadding="0" style="
+    "
+  >
+    <!-- Main Wrapper Table -->
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      bgcolor="#ffffff"
+    >
+      <tr style="background-color: #ffffff; width: 100%; padding: 20px">
+        <td align="center" style="padding: 20px">
+          <table
+            class="card"
+            width="600"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            style="
               max-width: 600px;
               margin: auto;
               background: linear-gradient(180deg, #1b1b1b 0%, #0e0e0e 100%);
               border-radius: 12px;
               overflow: hidden;
               color: #ffffff;
-              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            ">
-                    <!-- Section 1: Main Intro -->
-                    <tr>
-                        <td align="center" style="padding: 40px 30px; text-align: center">
-
-                              <a
-                  href="https://infra.1xl.com/"
-                  target="_blank"
-                 >
-                <img
-                  src="{client_logo_url}"
-                  alt="Logo"
-                  style="
-                    height: auto;
-                    display: block;
-                    margin: 10px auto;
-                    max-width: 120px;
-                  "
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            "
+          >
+            <!-- Body -->
+            <!-- Website Logo -->
+            <tr>
+              <td
+                align="center"
+                style="padding: 35px 20px 0 20px; text-align: center"
+              >
+                <a href="https://Infra.1XL.com/" target="_blank">
+                  <img
+                    src="{client_logo_url}"
+                    alt="Logo"
+                    width="120"
+                    style="
+                      max-width: 120px;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    "
                 /></a>
-                            <h1 style="
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 50px 30px; text-align: center">
+                <h1
+                  style="
                     margin: 0;
                     font-size: 26px;
                     line-height: 36px;
                     font-weight: normal;
                     color: #ffffff;
-                  ">
-                               Why Now is the
-                                <span style="color: #3778f6; font-weight: bold">
-                                    Best Time to Invest
-                                </span>
-                                in Dubai
-                            </h1>
-                            <p style="
-                    margin: 25px auto 30px;
-                    color: white;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
-                  ">
-                                Dubai’s real estate market is booming, offering stability, strong returns, and growth potential. Leverage current trends and invest in prime properties today for long-term success..
-                            </p>
-                            <a href="https://infra.1xl.com/investment-opportunities" target="_blank" style="
-                    display: inline-block;
-                   background-color: #bf1d2b;
-                    color: #ffffff;
-                    text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                  ">Explore Investment Opportunities</a>
-                        </td>
-                    </tr>
-
-                    <!-- Section 2: Residential Assets -->
-                    <tr>
-                        <td bgcolor="#ffffff" style="padding: 20px 30px; text-align: center; color: #0e0e0e">
-                            <h1 style="
-                    margin: 0;
-                    font-size: 26px;
-                    line-height: 36px;
-                    font-weight: normal;
-                  ">
-                                Dubai Real Estate: A Stable Investment
-                            </h1>
-                            <p style="
+                  "
+                >
+                  From Dream Home to Reality with
+                  <span style="color: #3778f6; font-weight: 500">
+                    <span style="font-family: Verdana; font-weight: 500"
+                      >1XL</span
+                    >
+                    Infra</span
+                  >
+                </h1>
+                <p
+                  style="
                     margin: 25px auto 40px;
                     font-size: 14px;
                     line-height: 24px;
                     max-width: 480px;
-                  ">
-                                Dubai’s property market has shown resilience, with prices steadily increasing and rental yields outpacing global markets. Strong demand for quality real estate ensures a stable investment environment, making it the ideal time to invest. <span style="font-family: Verdana">1XL</span> Infra projects are strategically located in high-growth areas, promising attractive returns.
-                            </p>
-                            <a href="https://infra.1xl.com/" target="_blank" style="
+                    color: #b5b5b5;
+                  "
+                >
+                  Discover how one family’s journey to find their perfect home
+                  with <span style="font-family: Verdana">1XL</span> Infra
+                  transformed their lifestyle. Experience quality living and
+                  smart investments in our premium properties.
+                </p>
+                <a
+                  href="https://Infra.1XL.com/"
+                  target="_blank"
+                  style="
                     display: inline-block;
-                    background-color: #bf1d2b;
+                    background-color: #b01d2b;
                     color: #ffffff;
                     text-decoration: none;
                     padding: 12px 28px;
                     border-radius: 25px;
                     font-size: 14px;
                     font-weight: bold;
-                  ">Know More</a>
-                        </td>
-                    </tr>
+                  "
+                >
+                  Start Your Journey
+                </a>
+              </td>
+            </tr>
 
-                    <!-- Section 4: How 1XL Infra Can Help -->
-                    <tr>
-            <td style="
-                  padding: 25px 20px;
-                  text-align: center;
-                  background-color: #F2F6F7;
-                  color: #ffffff;
-                ">
-              <h2 style="
-                    font-size: 24px;
-                    color: #071c1f;
-                    
-                    margin-bottom: 20px;
-                    margin-top: 0;
-                  ">
-               <span style="color: #002263;"><span style="font-family: Verdana; font-weight: none">1XL</span> Infra’s </span> Recent Successes
-              </h2>
-              <table class="two-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
-                style="table-layout: fixed">
-                <tr>
-                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
-                          background-color: #fff;
-                          border: 1px solid #e6e6e6;
-                          border-radius: 10px;
-                          padding: 10px;
-                          text-align: center;
-                          height: 100%;
-                          min-height: 200px;
-                        ">
-                      <tr>
-                        <td style="padding: 10px;vertical-align: top;">
-                          <h4 style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 10px;
-                                color: #071c1f;
-                                margin-top: 0;
-                                
-                              ">
-                            Proven Track Record
-                          </h4>
-                          <p style="
-                                font-size: 14px;
-                                color: #5C727D;
-                                line-height: 1.5;
-                                margin: 0;
-                                text-align:justify; 
-                                text-justify: inter-word; 
-                                hyphens: auto;
-                              ">
-                            <span style="font-family: Verdana">1XL</span> Infra’s developments, like Emerald Tower and Sapphire, have shown strong demand and capital growth.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
-                          background-color: #fff;
-                          border-radius: 10px;
-                          padding: 10px;
-                          text-align: center;
-                          height: 100%;
-                          min-height: 200px;
-                          border: 1px solid #e6e6e6;
-                        ">
-                      <tr>
-                        <td style="padding: 10px;vertical-align: top ;">
-                          <h4 style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 10px;
-                                color: #071c1f;
-                                margin-top: 0;
-                              ">
-                            High-Yield Locations
-                          </h4>
-                          <p style="
-                                font-size: 14px;
-                                color: #5C727D;
-                                line-height: 1.5;
-                                text-align:justify; 
-                                text-justify: inter-word; 
-                                hyphens: auto;
-                                margin: 0;
-                              ">
-                            Our projects are situated in high-demand areas, ensuring robust rental yields and long-term returns.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                
-                </tr>
-              </table>
-            </td>
-          </tr>
+            <!-- Dubai Industrial City Section -->
+            <tr>
+              <td
+                bgcolor="#ffffff"
+                style="padding: 50px 30px; text-align: center; color: #0e0e0e"
+              >
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 26px;
+                    line-height: 36px;
+                    font-weight: normal;
+                    color: #000000;
+                  "
+                >
+                  Finding a Home that Fits Their Needs
+                </h1>
+                <p
+                  style="
+                    margin: 25px auto 40px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #000000;
+                  "
+                >
+                  The family sought more than just a house – they wanted a space
+                  that felt like home. After exploring various options, they
+                  found <span style="font-family: Verdana">1XL</span> Infra’s
+                  Sapphire and Emerald Tower to be the perfect fit, combining
+                  modern design, quality construction, and a prime location for
+                  their lifestyle.
+                </p>
+                <!-- <a
+                  href="https://Infra.1XL.com/"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    background-color: #b01d2b;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 12px 28px;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    font-weight: bold;
+                  "
+                >
+                  Explore More
+                </a> -->
+              </td>
+            </tr>
 
-           <!-- Footer Section -->
+            <!-- Emerging Investment Areas Section -->
+            <tr>
+              <td
+                bgcolor="#d4f5f5"
+                style="padding: 50px 30px; text-align: center; color: #0e0e0e"
+              >
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 26px;
+                    line-height: 30px;
+                    font-weight: normal;
+                    color: #000000;
+                  "
+                >
+                  Why
+                  <span style="color: #b01d2b; font-weight: 500">
+                    <span style="font-family: Verdana; font-weight: 500"
+                      >1XL</span
+                    >
+                    Infra
+                  </span>
+                  Was Their Trusted Choice
+                </h1>
+                <p
+                  style="
+                    margin: 25px auto 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #000000;
+                  "
+                >
+                  After reviewing multiple options, the family chose
+                  <span style="font-family: Verdana">1XL</span> Infra for its
+                  transparency, personalised service, and reputation for
+                  quality. Our team worked closely with them to ensure their
+                  dream home aligned with both their lifestyle and investment
+                  goals, making the decision easy.
+                </p>
+                <a
+                  href="https://Infra.1XL.com/"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    background-color: #b01d2b;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 12px 28px;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    font-weight: bold;
+                  "
+                >
+                  Discover More
+                </a>
+              </td>
+            </tr>
+
+            <!-- Premier Projects Section -->
+            <tr>
+              <td
+                bgcolor="#d4f5f5"
+                style="padding: 20px 30px; text-align: center; color: #0e0e0e"
+              >
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 26px;
+                    line-height: 30px;
+                    font-weight: normal;
+                    color: #000000;
+                  "
+                >
+                  Transforming Their Everyday Living
+                </h1>
+                <p
+                  style="
+                    margin: 25px auto 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #000000;
+                  "
+                >
+                  Since moving into their new
+                  <span style="font-family: Verdana">1XL</span> Infra home, the
+                  family’s daily life has been transformed. The spacious, modern
+                  layout has given them more room for family activities, while
+                  the smart home features have enhanced convenience and comfort.
+                </p>
+                <p
+                  style="
+                    margin: 25px auto 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #000000;
+                  "
+                >
+                  The peaceful environment and proximity to key amenities have
+                  also significantly improved their quality of life, making
+                  their new home a perfect blend of luxury and practicality.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer Section -->
             <tr>
               <td
                 style="
@@ -309,6 +364,7 @@
                         commercial properties.
                       </p>
                     </td>
+
                     <!-- Column 2: Address -->
                     <td
                       class="column"
@@ -339,6 +395,7 @@
                         74242
                       </p>
                     </td>
+
                     <!-- Column 3: Socials -->
                     <td
                       class="column"
@@ -475,6 +532,7 @@
                     </td>
                   </tr>
                 </table>
+
                 <!-- Copyright -->
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -500,7 +558,9 @@
                 </table>
               </td>
             </tr>
-                </table>
-</body>
-
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
