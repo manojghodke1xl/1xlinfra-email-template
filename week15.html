@@ -1,742 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style>
       body {
         margin: 0;
+        padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #f3f2ef;
+        background-color: #ffffff;
       }
-
-      .container {
-        padding: 20px;
-        background-color: #edf5f9;
-      }
-
-      .card {
-        max-width: 600px;
-        margin: auto;
-        background: #ffffff;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .header {
-        padding: 20px 0 0 0;
-        text-align: center;
-        background-color: #9e59ab;
-      }
-
-      .header .logo img {
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        max-width: 120px;
-      }
-
-      .real-section {
-        background-color: #9e59ab;
-        padding: 30px 20px;
-        margin-bottom: 20px;
-      }
-
-      .real-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 30px;
-      }
-
-      .real-text {
-        flex: 2 150px;
-      }
-
-      .real-text h1 {
-        font-size: 30px;
-        font-weight: 700;
-        color: white;
-        margin-bottom: 15px;
-        text-align: center;
-      }
-
-      .real-text p {
-        font-size: 14px;
-        color: white;
-        line-height: 1.6;
-        margin-bottom: 25px;
-        text-align: center;
-      }
-
-      .about-section {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      .about-section h2 {
-        font-size: 24px;
-        color: #000;
-        margin-bottom: 12px;
-        font-weight: 600;
-      }
-
-      .about-section h2 span {
-        color: #ff7a00;
-        font-weight: 600;
-      }
-
-      .about-section p {
-        color: #666;
-        font-size: 15px;
-        line-height: 1.6;
-        max-width: 500px;
-        margin: 10px auto;
-      }
-
-      .Invest-btn {
-        display: inline-block;
-        border: 2px solid black;
-        background-color: #434343;
-        color: #ffffff !important;
-        padding: 10px 25px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 16px;
-        margin-top: 20px;
-        text-align: center;
-        transition: background 0.3s ease;
-<<<<<<< Updated upstream
-      }
-
-      .services-section .Invest-btn {
-        display: inline-block;
-        border: 2px solid black;
-        background-color: #434343;
-        color: #ffffff !important;
-        padding: 10px 25px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 16px;
-        margin-top: 20px;
-        text-align: center;
-        transition: background 0.3s ease;
-      }
-
-      .services-section {
-        margin: 0 0 20px 0;
-        padding: 10px 20px 25px 20px;
-        text-align: center;
-        background-color: #f69d49;
-      }
-
-      .services-section h2 {
-        font-size: 24px;
-        color: #fff;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .services-flex {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .service-box {
-        flex: 1;
-        width: 100%;
-        background-color: #fafafa;
-        border: 1px solid #e6e6e6;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-        transition: all 0.3s ease;
-      }
-
-      .service-box h4 {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #000;
-      }
-
-      .service-box p {
-        font-size: 14px;
-        color: #555;
-        line-height: 1.5;
-      }
-
-      .social-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 30px;
-        background-color: #eceaea;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .social-box {
-        flex: 1;
-        min-width: 250px;
-      }
-
-      .social-box h3 {
-        font-size: 18px;
-        font-weight: bold;
-        color: orange;
-        margin-bottom: 15px;
-      }
-
-      .social-about p {
-        font-size: 13px;
-        color: #555;
-        line-height: 1.6;
-        margin-bottom: 10px;
-      }
-
       .footer {
         background-color: #3778f6;
         text-align: center;
         font-size: 12px;
         color: #ffffff;
-        padding: 12px 6px;
+        padding: 10px 6px;
+        border-radius: 0 0 15px 15px;
       }
-
-      .social_btns a {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        margin: 7px;
-        text-align: center;
-        line-height: 28px;
-        vertical-align: middle;
-      }
-
-      .social_btns img {
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-      }
-
-      .footer-icons {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-      .footer-icons div {
-        margin-bottom: 4px;
-      }
-
-      /* --- Responsive Media Queries --- */
-      @media screen and (max-width: 768px) {
-        .real-content {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .services-flex {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .service-box {
-          width: 100%;
-          margin-bottom: 15px;
-        }
-
-        .social-section {
-          flex-direction: column;
-          align-items: center !important;
-          text-align: center;
-          gap: 20px !important;
-        }
-
-        /* Fix for OUR SOCIALS icons */
-        .social-box {
-          width: 100% !important;
-          min-width: auto !important;
-          text-align: center !important;
-        }
-
-        .footer-icons div {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap; /* allows 4+4 icons in two rows */
-          gap: 10px;
-        }
-
-        .social_btns a {
-          margin: 5px !important;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        .container {
-          padding: 10px;
-        }
-
-        .real-section {
-          padding: 20px 10px;
-        }
-
-        .real-text h1 {
-          font-size: 20px;
-          line-height: 1.3;
-        }
-
-        .real-text p {
-          font-size: 13px;
-          line-height: 1.5;
-          margin-bottom: 15px;
-        }
-
-        .Invest-btn {
-          font-size: 14px;
-          padding: 8px 20px;
-          border-radius: 15px;
-        }
-
-        .about-section h2 {
-          font-size: 18px;
-        }
-
-        .about-section p {
-          font-size: 13px;
-          padding: 0 5px;
-        }
-
-        .service-box {
-          padding: 8px;
-          margin: 8px 0;
-        }
-
-        .social-section {
-          padding: 15px;
-          gap: 20px;
-        }
-
-        .social-box h3 {
-          font-size: 16px;
-        }
-
-        .social-about p {
-          font-size: 12px;
-        }
-
-        .social_btns a {
-          width: 26px;
-          height: 26px;
-          margin: 5px;
-        }
-
-        .social_btns img {
-          width: 14px;
-          height: 14px;
-        }
-
-        .footer {
-          font-size: 11px;
-          padding: 10px 5px;
-        }
-      }
-
-      @media screen and (max-width: 360px) {
-        .real-text h1 {
-          font-size: 18px;
-        }
-
-        .about-section h2 {
-          font-size: 16px;
-        }
-
-        .Invest-btn {
-          font-size: 13px;
-          padding: 8px 16px;
-        }
-      }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 400px) {
         .card {
           width: 100% !important;
           border-radius: 0 !important;
         }
-        .three-columns .column,
-        .footer-columns .column {
+        .three-columns .column {
           width: 100% !important;
-          max-width: 100% !important;
           display: block !important;
-          text-align: center !important;
           padding: 10px 0 !important;
         }
-        .social-h4 {
-          margin-left: 20px !important;
-        }
         .footer-columns .column {
-          text-align: center !important;
-          padding: 10px 0 !important;
-        }
-        h1,
-        h2,
-        h3,
-        p,
-        a {
-          font-size: inherit !important;
-        }
-        td {
-          padding-left: 10px !important;
-          padding-right: 10px !important;
-        }
-        hr {
-          margin: 15px 0 !important;
-        }
-        .social-icons {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-          margin: 0 auto !important;
-          text-align: center !important;
-        }
-        .social-icons tr,
-        .social-icons td {
-          display: inline-flex !important;
-          text-align: center !important;
-          /* padding: 0px 8px 5px 8px !important; */
-        }
-        .footer-heading {
-          margin: 25px auto 10px auto !important;
-        }
-      }
-=======
-      }
-
-      .services-section .Invest-btn {
-        display: inline-block;
-        border: 2px solid black;
-        background-color: #434343;
-        color: #ffffff !important;
-        padding: 10px 25px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 16px;
-        margin-top: 20px;
-        text-align: center;
-        transition: background 0.3s ease;
-      }
-
-      .services-section {
-        margin: 0 0 20px 0;
-        padding: 10px 20px 25px 20px;
-        text-align: center;
-        background-color: #f69d49;
-      }
-
-      .services-section h2 {
-        font-size: 24px;
-        color: #fff;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .services-flex {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .service-box {
-        flex: 1;
-        width: 100%;
-        background-color: #fafafa;
-        border: 1px solid #e6e6e6;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-        transition: all 0.3s ease;
-      }
-
-      .service-box h4 {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #000;
-      }
-
-      .service-box p {
-        font-size: 14px;
-        color: #555;
-        line-height: 1.5;
-      }
-
-      .social-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 30px;
-        background-color: #eceaea;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .social-box {
-        flex: 1;
-        min-width: 250px;
-      }
-
-      .social-box h3 {
-        font-size: 18px;
-        font-weight: bold;
-        color: orange;
-        margin-bottom: 15px;
-      }
-
-      .social-about p {
-        font-size: 13px;
-        color: #555;
-        line-height: 1.6;
-        margin-bottom: 10px;
-      }
-
-      .footer {
-        background-color: #3778f6;
-        text-align: center;
-        font-size: 12px;
-        color: #ffffff;
-        padding: 12px 6px;
-      }
-
-      .social_btns a {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        margin: 7px;
-        text-align: center;
-        line-height: 28px;
-        vertical-align: middle;
-      }
-
-      .social_btns img {
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-      }
-
-      .footer-icons {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-      .footer-icons div {
-        margin-bottom: 4px;
-      }
-
-      /* --- Responsive Media Queries --- */
-      @media screen and (max-width: 768px) {
-        .real-content {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .services-flex {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .service-box {
-          width: 100%;
-          margin-bottom: 15px;
-        }
-
-        .social-section {
-          flex-direction: column;
-          align-items: center !important;
-          text-align: center;
-          gap: 20px !important;
-        }
-
-        /* Fix for OUR SOCIALS icons */
-        .social-box {
           width: 100% !important;
-          min-width: auto !important;
-          text-align: center !important;
-        }
-
-        .footer-icons div {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap; /* allows 4+4 icons in two rows */
-          gap: 10px;
-        }
-
-        .social_btns a {
-          margin: 5px !important;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        .container {
-          padding: 10px;
-        }
-
-        .real-section {
-          padding: 20px 10px;
-        }
-
-        .real-text h1 {
-          font-size: 20px;
-          line-height: 1.3;
-        }
-
-        .real-text p {
-          font-size: 13px;
-          line-height: 1.5;
-          margin-bottom: 15px;
-        }
-
-        .Invest-btn {
-          font-size: 14px;
-          padding: 8px 20px;
-          border-radius: 15px;
-        }
-
-        .about-section h2 {
-          font-size: 18px;
-        }
-
-        .about-section p {
-          font-size: 13px;
-          padding: 0 5px;
-        }
-
-        .service-box {
-          padding: 8px;
-          margin: 8px 0;
-        }
-
-        .social-section {
-          padding: 15px;
-          gap: 20px;
-        }
-
-        .social-box h3 {
-          font-size: 16px;
-        }
-
-        .social-about p {
-          font-size: 12px;
-        }
-
-        .social_btns a {
-          width: 26px;
-          height: 26px;
-          margin: 5px;
-        }
-
-        .social_btns img {
-          width: 14px;
-          height: 14px;
-        }
-
-        .footer {
-          font-size: 11px;
-          padding: 10px 5px;
-        }
-      }
-
-      @media screen and (max-width: 360px) {
-        .real-text h1 {
-          font-size: 18px;
-        }
-
-        .about-section h2 {
-          font-size: 16px;
-        }
-
-        .Invest-btn {
-          font-size: 13px;
-          padding: 8px 16px;
-        }
-      }
-    @media screen and (max-width: 600px) {
-      .card {
-        width: 100% !important;
-        border-radius: 0 !important;
-      }
-
-      .three-columns .column,
-      .footer-columns .column {
-        width: 100% !important;
-        max-width: 100% !important;
-        display: block !important;
-        /* text-align: center !important; */
-         padding: 0px 0px !important;
-      }
-       .three-columns .column {
           display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          text-align: center !important;
-          padding: 15px 0 !important;
-          box-sizing: border-box;
+          padding: 0px 0 !important;
+          
         }
-
-      .social-h4 {
-        margin-left: 20px !important;
-      }
-
-      .footer-columns .column {
-       
-        padding: 10px 0 !important;
-      }
-
-      h1,
-      h2,
-      h3,
-      p,
-      a {
-        font-size: inherit !important;
-      }
-
-      td {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-      }
-
-      hr {
-        margin: 15px 0 !important;
-      }
-
-      .social-icons {
-         display: inline-block !important;
+         .three-columns .column table {
+               min-height: 0 !important;
+              height: auto !important;
+  }
+       .social-icons {
+          display: inline-block !important;
           justify-content: center !important;
           align-items: center !important;
           margin: 0 auto !important;
           text-align: left !important;
+        }
+        .social-icons tr,
+        .social-icons td {
+          text-align: left !important;
+        }
+        .footer-heading {
+          margin: 10px auto 10px auto !important;
+        }
       }
-
-      .social-icons tr,
-      .social-icons td {
-         text-align: left !important;
-      }
-
-      .footer-heading {
-        margin: 10px auto 10px auto !important;
-      }
-    }
->>>>>>> Stashed changes
     </style>
   </head>
 
@@ -745,47 +61,37 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #edf5f9;
+      background-color: #ffffff;
     "
   >
+    <!-- Main Wrapper Table -->
     <table
       width="100%"
-      border="0"
-      cellspacing="0"
       cellpadding="0"
-      bgcolor="#edf5f9"
+      cellspacing="0"
+      border="0"
+      bgcolor="#ffffff"
     >
       <tr>
-        <td align="center" style="padding: 20px">
+        <td align="center">
+          <!-- Card Table -->
           <table
             class="card"
             width="600"
-            border="0"
-            cellspacing="0"
             cellpadding="0"
+            cellspacing="0"
+            border="0"
             style="
-              max-width: 600px;
-              margin: auto;
-              background: #ffffff;
               border-radius: 12px;
               overflow: hidden;
-              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              color: #ffffff;
+             background: linear-gradient(to left, #012262, #3778f6);
             "
           >
-            <!-- Header -->
-            <!-- Website Logo -->
-            <tr>
+           <tr>
               <td
                 align="center"
-<<<<<<< Updated upstream
-                style="
-                  padding: 20px 0 0 0;
-                  text-align: center;
-                  background: linear-gradient(to left, #012262, #3778f6);
-                "
-=======
                 style="padding: 35px 20px 0 20px; text-align: center;  background: linear-gradient(to left, #012262, #3778f6);"
->>>>>>> Stashed changes
               >
                 <a href="https://Infra.1XL.com/" target="_blank">
                   <img
@@ -801,97 +107,84 @@
                 /></a>
               </td>
             </tr>
-            </tr>
             <tr>
-              <td
-                style="
-                  background: linear-gradient(to left, #012262, #3778f6);
-                  padding: 30px 20px 20px;
-                  margin-bottom: 20px;
-                "
-              >
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="center">
-                      <h1
-                        style="
-                          font-size: 30px;
-                          font-weight: 700;
-                          color: white;
-                          margin-bottom: 15px;
-                          text-align: center;
-                          margin-top: 0;
-                        "
-                      >
-                        Stay Ahead: Key Trends in Dubai Real Estate
-                      </h1>
-                      <p
-                        style="
-                          font-size: 14px;
-                          color: white;
-                          line-height: 1.6;
-                          margin-bottom: 25px;
-                          text-align: justify;
-                          max-width: 500px;
-                          margin-left: auto;
-                          margin-right: auto;
-                        "
-                      >
-                        Discover the current and future trends shaping Dubai’s
+              
+              <td align="center" style="padding: 30px 30px; text-align: center">
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #ffffff;
+                  "
+                >
+                  Stay Ahead: Key Trends in Dubai Real Estate
+                </h1>
+                <p
+                  style="
+                    margin: 25px auto 40px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #ffffff;
+                    text-align: center;
+                  "
+                >
+                  Discover the current and future trends shaping Dubai’s
                         property market. From sustainable living to luxury
                         growth, explore how these trends are creating new
                         opportunities for investors.
-                      </p>
-                      <a
-                        href="https://infra.1xl.com/investment-opportunities"
-                        target="_blank"
-                        style="
-                          display: inline-block;
-                          background-color: #b01d2b;
-                          color: #ffffff;
-                          padding: 10px 25px;
-                          border-radius: 20px;
-                          text-decoration: none;
-                          font-weight: 700;
-                          font-size: 16px;
-                          margin-top: 20px;
-                          text-align: center;
-                          transition: background 0.3s ease;
-                        "
-                        >Explore Investment Opportunities
-                      </a>
-                    </td>
-                  </tr>
-                </table>
+                </p>
+                <a
+                
+                  href="https://infra.1xl.com/investment-opportunities"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    background-color: #bf1d2b;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 12px 28px;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    font-weight: bold;
+                  "
+                >
+                 Explore Investment Opportunities
+                </a>
               </td>
             </tr>
 
-            <!-- Body -->
+            <!-- Dubai Industrial City Section -->
             <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
+              <td
+                bgcolor="#ffffff"
+                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
+              >
+                <h1
                   style="
+                    margin: 0;
                     font-size: 24px;
-                    color: #000;
-                    margin-bottom: 12px;
+                    line-height: 36px;
                     font-weight: 600;
-                    margin-top: 0;
+                    color: #071c1f;
                   "
                 >
-                  Affordable Housing: Meeting Dubai’s<span
+                 Affordable Housing: Meeting Dubai’s<span
                     style="color: #b01d2b; font-weight: 600"
                   >
                     Growing Demand</span
                   >
-                </h2>
+
+                </h1>
                 <p
                   style="
-                    color: #666;
-                    font-size: 15px;
-                    line-height: 1.6;
-                    max-width: 500px;
-                    margin: 10px auto;
-  text-align: justify;
+                    margin: 25px auto 10px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #5c727d;
+                    text-align: justify;
                   "
                 >
                   With Dubai’s expanding population and diverse expatriate
@@ -899,419 +192,170 @@
                   Developers are focusing on cost-effective yet high-quality
                   residential options, catering to first-time homebuyers and
                   families looking for value-driven investments.
-                </p>
-                <a
-                  href="https://Infra.1XL.com/"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    background-color: #b01d2b;
-                    color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
-                  "
-                  >Explore More
-                </a>
+                </p> 
               </td>
             </tr>
 
-            <tr>
-  <td
-    style="
-      padding: 25px 20px;
-      text-align: center;
-      background-color: #f2f6f7;
-    "
-  >
-    <h2
-      style="
-        font-size: 24px;
-        color: #071c1f;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin-top: 0;
-      "
-    >
-      The Rise of Sustainable and Smart Homes
-    </h2>
-
-    <table
-      class="three-columns"
-      width="100%"
-      border="0"
-      cellspacing="0"
-      cellpadding="0"
-      style="table-layout: fixed"
-    >
-      <tr>
-        <!-- CARD 1 -->
-        <td width="33.33%" valign="top" style="padding: 10px;">
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            style="
-              background-color: #ffffff;
-              text-align: center;
-              height: 100%;
-            "
-          >
-            <tr>
-              <td
-                style="
-<<<<<<< Updated upstream
+              <!-- Premier Projects Section -->
+           <tr>
+            <td style="
                   padding: 25px 20px;
                   text-align: center;
-                  background-color: #f2f6f7;
-                  color: #ffffff;
-=======
-                  padding: 10px;
-                  height: 275px;
-                  vertical-align: top;
->>>>>>> Stashed changes
-                "
-              >
-                <h4
-                  style="
-<<<<<<< Updated upstream
+                  background-color: #F2F6F7;
+    color: #ffffff;
+                ">
+              <h2 style="
                     font-size: 24px;
                     color: #071c1f;
-=======
-                    font-size: 18px;
->>>>>>> Stashed changes
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                    color: #071c1f;
+                    font-weight: 600;
+                    margin-bottom: 20px;
                     margin-top: 0;
-                  "
-                >
-                  Eco-Friendly Construction
-                </h4>
-                <p
-                  style="
-                    font-size: 14px;
-                    color: #5c727d;
-                    line-height: 1.5;
-                    margin: 0;
-                    text-align: justify;
-                  "
-                >
-<<<<<<< Updated upstream
-                  <tr>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
+                  ">
+               The Rise of Sustainable and Smart Homes
+              </h2>
+              <table class="three-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
+                style="table-layout: fixed">
+                <tr>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
                           background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                          min-height: 255px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
+min-height: 284px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top;">
+                          <h4 style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
                                 color: #071c1f;
                                 margin-top: 0;
-                              "
-                            >
-                              Eco-Friendly Construction
-                            </h4>
-                            <p
-                              style="
+                              ">
+                             Eco-Friendly Construction
+                          </h4>
+                          <p style="
                                 font-size: 14px;
-                                color: #5c727d;
+                                color: #5C727D;
                                 line-height: 1.5;
                                 margin: 0;
-                                text-align: justify;
-                                text-justify: inter-word;
+                                text-align:justify; 
+                                text-justify: inter-word; 
                                 hyphens: auto;
-                              "
-                            >
-                              Developers are prioritising sustainable building
-                              materials and energy-efficient systems to reduce
-                              environmental impact and operational costs.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fff;
-                          padding: 10px;
-                          text-align: center;
-                          height: 100%;
-                          min-height: 255px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 10px;
-                                color: #071c1f;
-                                margin-top: 0;
-                              "
-                            >
-                              Smart Home Integration
-                            </h4>
-                            <p
-                              style="
-                                font-size: 14px;
-                                color: #5c727d;
-                                line-height: 1.5;
-                                margin: 0;
-                                text-align: justify;
-                                text-justify: inter-word;
-                                hyphens: auto;
-                              "
-                            >
-                              Smart technologies, including automation for
-                              lighting, climate control, and security, enhance
-                              comfort and convenience for residents.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="
-                          background-color: #fff;
-                          padding: 10px;
-                          text-align: center;
-                          height: 100%;
-                          min-height: 255px;
-                        "
-                      >
-                        <tr>
-                          <td style="padding: 10px">
-                            <h4
-                              style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 25px;
-                                color: #071c1f;
-                                margin-top: 0;
-                              "
-                            >
-                              Future-Ready Living
-                            </h4>
-                            <p
-                              style="
-                                font-size: 14px;
-                                color: #5c727d;
-                                line-height: 1.5;
-                                margin: 0;
-                                text-align: justify;
-                                text-justify: inter-word;
-                                hyphens: auto;
-                              "
-                            >
-                              Sustainably designed homes with smart features are
-                              becoming highly sought after for their long-term
-                              investment value.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- <a
-                  href="https://infra.1xl.com/projects"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    background-color: #b01d2b;
-                    color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
-                  "
-                  >Explore More
-                </a> -->
-=======
-                  Developers are prioritising sustainable building materials and
+                              ">
+                            Developers are prioritising sustainable building materials and
                   energy-efficient systems to reduce environmental impact and
                   operational costs.
-                </p>
->>>>>>> Stashed changes
-              </td>
-            </tr>
-          </table>
-        </td>
-
-        <!-- CARD 2 -->
-        <td width="33.33%" valign="top" style="padding: 10px;">
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            style="
-              background-color: #ffffff;
-              text-align: center;
-              height: 100%;
-            "
-          >
-            <tr>
-              <td
-                style="
-                  padding: 10px;
-                  height: 275px;
-                  vertical-align: top;
-                "
-              >
-                <h4
-                  style="
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                    color: #071c1f;
-                    margin-top: 0;
-                  "
-                >
-                  Smart Home Integration
-                </h4>
-                <p
-                  style="
-                    font-size: 14px;
-                    color: #5c727d;
-                    line-height: 1.5;
-                    margin: 0;
-                    text-align: justify;
-                  "
-                >
-                  Smart technologies, including automation for lighting, climate
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+min-height: 284px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top ;">
+                          <h4 style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 11px;
+                                color: #071c1f;
+                                margin-top: 0;
+                              ">
+                            Smart Home Integration
+                          </h4>
+                          <p style="
+                                font-size: 14px;
+                                color: #5C727D;
+                                line-height: 1.5;
+                                text-align:justify; 
+                                text-justify: inter-word; 
+                                hyphens: auto;
+                                margin: 0;
+                              ">
+                             Smart technologies, including automation for lighting, climate
                   control, and security, enhance comfort and convenience for
                   residents.
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+                          min-height: 295px;
+                        ">
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top;">
+                          <h4 style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 11px;
+                                color: #071c1f;
+                                margin-top: 0;
+                              ">
+                           Future-Ready Living
+                          </h4>
+                          <p style="
+                                font-size: 14px;
+                                color: #5C727D;
+                                line-height: 1.5;
+                                margin: 0;
+                                text-align:justify; 
+                                text-justify: inter-word; 
+                                hyphens: auto;
+                              ">
+                         Sustainably designed homes with smart features are becoming
+                  highly sought after for their long-term investment value.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-        <!-- CARD 3 -->
-        <td width="33.33%" valign="top" style="padding: 10px;">
-          <table
-            width="100%"
-            border="0"
-            cellspacing="0"
-            cellpadding="0"
-            style="
-              background-color: #ffffff;
-              text-align: center;
-              height: 100%;
-            "
-          >
+            <!-- Emerging Investment Areas Section -->
             <tr>
               <td
-                style="
-                  padding: 10px;
-                  height: 275px;
-                  vertical-align: top;
-                "
+                bgcolor="#ffffff"
+                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
               >
-                <h4
+                <h1
                   style="
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                    color: #071c1f;
-                    margin-top: 0;
-                  "
-                >
-                  Future-Ready Living
-                </h4>
-                <p
-                  style="
-                    font-size: 14px;
-                    color: #5c727d;
-                    line-height: 1.5;
                     margin: 0;
-                    text-align: justify;
-                  "
-                >
-                  Sustainably designed homes with smart features are becoming
-                  highly sought after for their long-term investment value.
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-            <tr>
-              <td align="center" style="padding: 30px 15px">
-                <h2
-                  style="
                     font-size: 24px;
-                    color: #000;
-                    margin-bottom: 12px;
+                    line-height: 30px;
                     font-weight: 600;
-                    margin-top: 0;
+                    color: #071c1f;
                   "
                 >
-                  Luxury Properties: A Hot Investment Segment
-                </h2>
+                  <span style="color: #b01d2b; font-weight: bold"
+                    >Luxury Properties:
+                  </span>
+                  A Hot Investment Segment
+                </h1>
                 <p
                   style="
-                    color: #666;
-                    font-size: 15px;
-                    line-height: 1.6;
-                    max-width: 500px;
-                    margin: 10px auto;
+                    margin: 25px auto 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #5c727d;
+                    text-align: center;
                   "
                 >
                   Dubai’s luxury real estate market continues to thrive,
@@ -1320,36 +364,33 @@
                   making it a top investment segment with substantial growth
                   potential.
                 </p>
+
                 <a
-                  href="https://Infra.1XL.com/"
+                  href="https://infra.1xl.com/"
                   target="_blank"
                   style="
                     display: inline-block;
-                    background-color: #b01d2b;
+                    background-color:#bf1d2b ;
                     color: #ffffff;
-                    padding: 10px 25px;
-                    border-radius: 20px;
                     text-decoration: none;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    text-align: center;
-                    transition: background 0.3s ease;
+                    padding: 12px 28px;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    font-weight: bold;
                   "
-                  >Learn More
+                >
+                  Learn More
                 </a>
               </td>
             </tr>
 
-            <!-- Footer Section -->
-            <tr>
+          
+
+           <!-- Footer Section -->
+           <tr>
               <td
                 style="
-<<<<<<< Updated upstream
-                  padding: 20px 25px;
-=======
                   padding: 20px 30px 20px 50px;
->>>>>>> Stashed changes
                   text-align: center;
                   font-size: 12px;
                   color: #000000;
@@ -1359,17 +400,6 @@
                 <table
                   class="footer-columns"
                   width="100%"
-<<<<<<< Updated upstream
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <!-- Column 1:  About -->
-                    <td
-                      class="column"
-                      width="33.33%"
-=======
                   align="center"
                   cellpadding="0"
                   cellspacing="0"
@@ -1381,18 +411,13 @@
                     <td
                       class="column"
                       width="45%"
->>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
-<<<<<<< Updated upstream
-                          margin: 45px 0 5px 0;
-=======
                           margin: 15px 0 5px 0;
->>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -1406,33 +431,26 @@
                           font-size: 12px;
                           line-height: 20px;
                           color: #000000;
+                          text-align: justify;
                         "
                       >
-                        <span style="font-family: Verdana">1XL</span> Infra is a
-                        leading real estate development company in Dubai,
-                        renowned for delivering high-value residential and
+                        <span style="font-family: Verdana">1XL</span>
+                        Infra is a leading real estate development company in
+                        Dubai, known for delivering high value residential and
                         commercial properties.
                       </p>
                     </td>
                     <!-- Column 2: Address -->
                     <td
                       class="column"
-<<<<<<< Updated upstream
-                      width="33.33%"
-=======
                       width="45%"
->>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
-<<<<<<< Updated upstream
-                          margin: 45px 0 5px 0;
-=======
                           margin: 15px 0 5px 0;
->>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -1455,22 +473,14 @@
                     <!-- Column 3: Socials -->
                     <td
                       class="column"
-<<<<<<< Updated upstream
-                      width="33.33%"
-=======
                       width="10%"
->>>>>>> Stashed changes
                       valign="top"
                       style="padding: 10px; text-align: left"
                     >
                       <h4
                         class="footer-heading"
                         style="
-<<<<<<< Updated upstream
-                          margin: 45px 0 5px 0;
-=======
                           margin: 15px 0 5px 0;
->>>>>>> Stashed changes
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
@@ -1483,11 +493,8 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
-<<<<<<< Updated upstream
-=======
                         align="center"
                         style="margin: 0 auto; text-align: center"
->>>>>>> Stashed changes
                       >
                         <tr>
                           <td style="padding: 0 15px 10px 0">
@@ -1497,19 +504,11 @@
                             >
                               <img
                                 src="{instagram}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="Instagram"
-                                style="display: block"
-                                title="Instagram"
-=======
                                 alt="Instagram"
                                 style="display: block"
                                 title="Instagram"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1520,19 +519,11 @@
                             >
                               <img
                                 src="{linkedin}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="LinkedIn"
-                                style="display: block"
-                                title="LinkedIn"
-=======
                                 alt="LinkedIn"
                                 style="display: block"
                                 title="LinkedIn"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1543,19 +534,11 @@
                             >
                               <img
                                 src="{facebook}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="Facebook"
-                                style="display: block"
-                                title="Facebook"
-=======
                                 alt="Facebook"
                                 style="display: block"
                                 title="Facebook"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1566,19 +549,11 @@
                             >
                               <img
                                 src="{youtube}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="YouTube"
-                                style="display: block"
-                                title="YouTube"
-=======
                                 alt="YouTube"
                                 style="display: block"
                                 title="YouTube"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1588,19 +563,11 @@
                             <a href="https://x.com/1XLInfra/" target="_blank">
                               <img
                                 src="{x}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="X"
-                                style="display: block"
-                                title="X"
-=======
                                 alt="X"
                                 style="display: block"
                                 title="X"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1611,19 +578,11 @@
                             >
                               <img
                                 src="{threads}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="Threads"
-                                style="display: block"
-                                title="Threads"
-=======
                                 alt="Threads"
                                 style="display: block"
                                 title="Threads"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1634,19 +593,11 @@
                             >
                               <img
                                 src="{pinterest}"
-<<<<<<< Updated upstream
-                                width="17"
-                                height="17"
-                                alt="Pinterest"
-                                style="display: block"
-                                title="Pinterest"
-=======
                                 alt="Pinterest"
                                 style="display: block"
                                 title="Pinterest"
                                 width="18px"
                                 height="18px"
->>>>>>> Stashed changes
                               />
                             </a>
                           </td>
@@ -1681,8 +632,5 @@
               </td>
             </tr>
           </table>
-        </td>
-      </tr>
-    </table>
   </body>
 </html>

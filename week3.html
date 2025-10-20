@@ -1,12 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f2ef;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: #edf5f9;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      padding: 20px 0 0 0;
+      text-align: center;
+      background-color: #9e59ab;
+    }
+
+    .header .logo img {
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: 120px;
+    }
+
+    .real-section {
+      background-color: #9e59ab;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+
+    .real-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .real-text {
+      flex: 2 150px;
+    }
+
+    .real-text h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .real-text p {
+      font-size: 14px;
+      color: white;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .about-section {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .about-section h2 {
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .about-section h2 span {
+      color: #ff7a00;
+      font-weight: 600;
+    }
+
+    .about-section p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 10px auto;
+    }
+
+    .Invest-btn {
+      display: inline-block;
+      border: 2px solid black;
+      background-color: #434343;
+      color: #ffffff !important;
+      padding: 10px 25px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .services-section .Invest-btn {
+      display: inline-block;
+      border: 2px solid black;
+      background-color: #434343;
+      color: #ffffff !important;
+      padding: 10px 25px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .services-section {
+      margin: 0 0 20px 0;
+      padding: 10px 20px 25px 20px;
+      text-align: center;
+      background-color: #f69d49;
+    }
+
+    .services-section h2 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .services-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .service-box {
+      flex: 1;
+      width: 100%;
+      background-color: #fafafa;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .service-box h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .service-box p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .social-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: #eceaea;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-box {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .social-box h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    .social-about p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
     .footer {
-      margin-top: 10px;
       background-color: #3778f6;
       text-align: center;
       font-size: 12px;
@@ -14,7 +214,33 @@
       padding: 12px 6px;
     }
 
-    @media screen and (max-width: 600px) {
+    .social_btns a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin: 7px;
+      text-align: center;
+      line-height: 28px;
+      vertical-align: middle;
+    }
+
+    .social_btns img {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .footer-icons {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer-icons div {
+      margin-bottom: 4px;
+    }
+
+    
+   @media screen and (max-width: 600px) {
       .card {
         width: 100% !important;
         border-radius: 0 !important;
@@ -33,7 +259,7 @@
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
-          padding: 15px 0 !important;
+          padding: 10px 0 !important;
           box-sizing: border-box;
         }
 
@@ -46,22 +272,24 @@
         padding: 10px 0 !important;
       }
 
-      h1,
-      h2,
-      h3,
-      p,
-      a {
-        font-size: inherit !important;
-      }
-
       td {
+        padding-top: 6px !important;
+    padding-bottom: 6px !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
+      
+      }
+    .middle-paragraph{
+                padding: 15px 15px;
+      }
+      .learn-more{
+                margin-bottom: 10px;
       }
 
-      hr {
-        margin: 15px 50px !important;
-      }
+      .three-columns .column table {
+    padding: 6px !important;
+  }
+
 
       .social-icons {
          display: inline-block !important;
@@ -79,6 +307,10 @@
       .footer-heading {
         margin: 10px auto 10px auto !important;
       }
+      .three-columns .column table {
+        min-height: 0 !important;
+        height: auto !important;
+    }
     }
   </style>
 </head>
@@ -87,20 +319,24 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
+      background-color: #edf5f9;
     ">
-  <!-- Main Wrapper Table -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#edf5f9">
     <tr>
-      <td align="center">
-        <!-- Card Table -->
-        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#1b1b1b"
-          style="border-radius: 12px; overflow: hidden; color: #ffffff">
+      <td align="center" style="padding: 20px">
+        <table class="card" width="600" border="0" cellspacing="0" cellpadding="0" style="
+              max-width: 600px;
+              margin: auto;
+              background: #ffffff;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            ">
           <!-- Header -->
-          <!-- Website Logo -->
-            <tr>
+          <tr>
               <td
                 align="center"
-                style="padding: 35px 20px 0 20px; text-align: center;"
+                style="padding: 35px 20px 0 20px; text-align: center;  background: linear-gradient(to left, #012262, #3778f6);"
               >
                 <a href="https://Infra.1XL.com/" target="_blank">
                   <img
@@ -116,199 +352,251 @@
                 /></a>
               </td>
             </tr>
-
-          <!-- Body -->
           <tr>
-            <td align="center" style="padding: 30px 30px 50px; text-align: center">
-              <h1 style="
-                    margin: 0;
-                    font-size: 26px;
-                    line-height: 36px;
-                    font-weight: normal;
-                    color: #ffffff;
-                  ">
-                Discover What Sets <span style="font-family: Verdana; color: #3778f6; font-weight: bold">1XL </span>
-                <span style="color: #3778f6; font-weight: bold">Infra</span>
-                Apart
-              </h1>
-              <p style="
-                    margin: 25px auto 40px;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
-                  ">
-                <span style="font-family: Verdana">1XL</span> Infra's developments redefine luxury with smart
-                technology, sustainable designs, and prime locations —
-                ensuring exceptional living spaces and long-term investment
-                value for every resident.
-              </p>
-              <a href="https://1xlinfra.com/" target="_blank" style="
-                    display: inline-block;
-                    background-color: #b01d2b;
-    color: #ffffff;
-                    text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                  ">
-                Learn More
-              </a>
+            <td style="
+                  background: linear-gradient(to left, #012262, #3778f6);
+                  padding: 30px 20px 20px;
+                  margin-bottom: 20px;
+                ">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <h1 style="
+                          font-size: 30px;
+                          color: white;
+                          margin-bottom: 15px;
+                          text-align: center;
+                          margin-top: 0;
+                        ">
+                      Discover What Sets <span style="font-family: Verdana;font-size: 28px;">1XL</span> Infra Apart
+                    </h1>
+                    <p style="
+                          font-size: 14px;
+                          color: white;
+                          line-height: 1.6;
+                          margin-bottom: 25px;
+                          text-align: center;
+                          max-width: 500px;
+                          margin-left: auto;
+                          margin-right: auto;
+
+                        ">
+                      <span style="font-family: Verdana;">1XL</span> Infra's developments redefine luxury with smart technology, sustainable designs, and prime locations, ensuring exceptional living spaces, and long-term investment value for every resident.
+                    </p>
+                    <a href="https://infra.1xl.com/" target="_blank" style="
+                          display: inline-block;
+                          background-color: #b01d2b;
+                          color: #ffffff;
+                          padding: 10px 25px;
+                          border-radius: 20px;
+                          text-decoration: none;
+                          font-weight: 700;
+                          font-size: 16px;
+                          margin-top: 20px;
+                          text-align: center;
+                          transition: background 0.3s ease;
+                        ">Learn More
+                    </a>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
-          <!-- Luxury Section -->
+          <!-- Body -->
           <tr>
-            <td bgcolor="#d4f5f5" style="padding: 30px 30px; color: #0e0e0e; text-align: justify;">
-              <h2 style="margin: 0; font-size: 20px; line-height: 28px;text-align: center;">
+            <td align="center" style="padding: 30px 15px">
+              <h2 class="middle-paragraph" style="
+                    font-size: 24px;
+                    color: #071c1f;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    margin-top: 0;
+                  "
+                  >
                 Luxury Living Experience
               </h2>
-              <h3 style="margin: 10px 0 15px; font-size: 16px; color: navy;text-align: center;">
+              <h3 style="margin: 10px 0 15px; font-size: 16px; color: #002263;text-align: center;">
                 Where Elegance Meets Comfort and Style
               </h3>
-              <p style="margin: 15px 0; font-size: 14px; line-height: 24px;text-align: center;">
-                <span style="font-family: Verdana">1XL</span> Infra blends comfort with sophistication, creating homes
-                that redefine luxury living. Our developments are designed
-                with premium materials, spacious layouts, and exceptional
-                finishes to provide an unparalleled living experience.
+              <p style="
+                    color: #5C727D;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+text-align: center;
+                  ">
+                <span style="font-family: Verdana">1XL</span> Infra blends comfort with sophistication, creating homes that redefine luxury living. Our developments are designed with premium materials, spacious layouts, and exceptional finishes to provide an unparalleled living experience.
               </p>
-              <p style="margin: 15px 0; font-size: 14px; line-height: 24px;text-align: center;">
-                From state-of-the-art kitchens to lavish bathrooms and
-                expansive living areas, we ensure every detail is perfected
-                for those who seek the best in life.
+              <p style="
+                    color: #5C727D;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+text-align: center;
+                  ">
+                From state-of-the-art kitchens to lavish bathrooms and expansive living areas, we ensure every detail is perfected for those who seek the best in life.
               </p>
               
             </td>
           </tr>
 
-          <!-- Why Choose Us Section -->
+          
           <tr>
             <td style="
-                  padding: 10px 0px;
+                  padding: 25px 20px;
                   text-align: center;
-                  color: #0e0e0e;
-                  background-color: #ffffff;
-text-align: justify;
+                  background-color: #F2F6F7;
+    color: #ffffff;
                 ">
               <h2 style="
-                    margin: 0 0 20px 0;
-                    font-size: 20px;
-                    line-height: 28px;
-                    color: #000000;
-text-align: center;
+                    font-size: 24px;
+                    color: #071c1f;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    margin-top: 0;
                   ">
-                Why Choose <span style="font-family: Verdana;">1XL</span> Infra?
+              Why Choose 1XL Infra?
               </h2>
-
-              <!-- 3 Columns -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <table class="three-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
+                style="table-layout: fixed">
                 <tr>
-                  <!-- Column 1 -->
-                  <td width="33%" valign="top" style="padding: 10px; text-align: justify;">
-                    <h3 style="
-                          margin: 0 0 5px 0;
-                          font-size: 16px;
-                          color: #000000;
-text-align: center;
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+min-height: 250px;
                         ">
-                      Unmatched Quality
-                    </h3>
-                    <hr style="
-                          border: none;
-                          height: 2px;
-                          background-color: #3778f6;
-                          width: 60px;
-                          margin: 5px 0px 0px 61px;
-                        " />
-                    <p style="font-size: 14px; line-height: 22px;">
-                      1XL Infra’s developments feature the highest standards
-                      in construction, design, and finishing for lasting
-                      excellence.
-                    </p>
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top;">
+                          <h4 style="
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-bottom: 10px;
+                                color: #071c1f;
+                                margin-top: 0;
+                              ">
+                            Unmatched Quality
+                          </h4>
+                          <p style="
+                                font-size: 14px;
+                                color: #5C727D;
+                                line-height: 1.5;
+                                margin: 0;
+                                text-align:justify; 
+                                text-justify: inter-word; 
+                                hyphens: auto;
+                              ">
+                           1XL Infra’s developments feature the highest standards in construction, design, and finishing for lasting excellence.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
-
-                  <!-- Column 2 -->
-                  <td width="33%" valign="top" style="padding: 10px">
-                    <h3 style="
-                          margin: 0 0 5px 0;
-                          font-size: 16px;
-                          color: #000000;
-text-align: center;
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+min-height: 270px;
                         ">
-                      Sustainable Design
-                    </h3>
-                    <hr style="
-                          border: none;
-                          height: 2px;
-                          background-color: #3778f6;
-                          width: 60px;
-                          margin: 5px 0px 0px 61px;
-                        " />
-                    <p style="font-size: 14px; line-height: 22px">
-                      Every project is built with eco-friendly materials,
-                      energy-efficient systems, and sustainable practices for
-                      the future.
-                    </p>
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top ;">
+                          <h4 style="
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-bottom: 11px;
+                                color: #071c1f;
+                                margin-top: 0;
+                              ">
+                            Sustainable Design
+                          </h4>
+                          <p style="
+                                font-size: 14px;
+                                color: #5C727D;
+                                line-height: 1.5;
+                                text-align:justify; 
+                                text-justify: inter-word; 
+                                hyphens: auto;
+                                margin: 0;
+                              ">
+                            Every project is built with eco-friendly materials, energy-efficient systems, and sustainable practices for the future.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
-
-                  <!-- Column 3 -->
-                  <td width="33%" valign="top" style="padding: 10px">
-                    <h3 style="
-                          margin: 0 0 5px 0;
-                          font-size: 16px;
-                          color: #000000;
-text-align: center;
+                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                          background-color: #fff;
+                          padding: 10px;
+                          text-align: center;
+                          height: 100%;
+                          min-height: 270px;
                         ">
-                      Prime Locations
-                    </h3>
-                    <hr style="
-                          border: none;
-                          height: 2px;
-                          background-color: #3778f6;
-                          width: 60px;
-                          margin: 5px 0px 0px 61px;
-                        " />
-                    <p style="font-size: 14px; line-height: 22px;">
-                      Our properties are strategically located in sought-after
-                      areas, ensuring high returns and long-term value.
-                    </p>
+                      <tr>
+                        <td style="padding: 10px;vertical-align: top;">
+                          <h4 style="
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-bottom: 11px;
+                                color: #071c1f;
+                                margin-top: 0;
+                              ">
+                           Prime Locations
+                          </h4>
+                          <p style="
+                                font-size: 14px;
+                                color: #5C727D;
+                                line-height: 1.5;
+                                margin: 0;
+                                text-align:justify; 
+                                text-justify: inter-word; 
+                                hyphens: auto;
+                              ">
+                        Our properties are strategically located in sought-after areas, ensuring high returns and long-term value.
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
-
-              <!-- Investment Journey -->
-              <div style="
-                    margin-top: 20px;
-                    background-color: #4b6db1;
-                    padding: 20px;
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 15px">
+              <h2 style="
+                    font-size: 24px;
+                    color: #071c1f;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    margin-top: 0;
+                  "class="middle-paragraph">
+                Start Your Investment Journey with Us
+              </h2>
+              <a class="learn-more" href="https://infra.1xl.com/" target="_blank" style="
+                    display: inline-block;
+                    background-color: #b01d2b;
                     color: #ffffff;
+                    padding: 10px 25px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 20px;
                     text-align: center;
-                    border-radius: 5px;
-                  ">
-                <h4 style="
-                      margin: 0 0 10px 0;
-                      font-size: 16px;
-                      text-transform: uppercase;
-                    ">
-                  Start Your Investment Journey with Us
-                </h4>
-                <a href="https://1xlinfra.com/" target="_blank" style="
-                      display: inline-block;
-                      background-color: #b01d2b;
-    color: #ffffff;
-                      text-decoration: none;
-                      padding: 12px 28px;
-                      border-radius: 25px;
-                      font-size: 14px;
-                      font-weight: bold;
-                    ">
-                  Learn More
-                </a>
-              </div>
+                    transition: background 0.3s ease;
+                  ">Learn More
+              </a>
             </td>
           </tr>
 
-          <!-- Footer Section -->
+        <!-- Footer Section -->
             <tr>
               <td
                 style="
@@ -353,11 +641,12 @@ text-align: center;
                           font-size: 12px;
                           line-height: 20px;
                           color: #000000;
+                          text-align: justify;
                         "
                       >
-                        <span style="font-family: Verdana">1XL</span> Infra is a
-                        leading real estate development company in Dubai,
-                        renowned for delivering high-value residential and
+                        <span style="font-family: Verdana">1XL</span>
+                        Infra is a leading real estate development company in
+                        Dubai, known for delivering high value residential and
                         commercial properties.
                       </p>
                     </td>
