@@ -1,49 +1,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style>
       body {
         margin: 0;
-        padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #ffffff;
+        background-color: #f3f2ef;
       }
+
+      .container {
+        padding: 20px;
+        background-color: #edf5f9;
+      }
+
+      .card {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
       .footer {
         background-color: #3778f6;
         text-align: center;
         font-size: 12px;
         color: #ffffff;
-        padding: 10px 6px;
-        border-radius: 0 0 15px 15px;
+        padding: 12px 6px;
       }
+
+      .social_btns a {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin: 7px;
+        text-align: center;
+        line-height: 28px;
+        vertical-align: middle;
+      }
+
+      .social_btns img {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+
+      .footer-icons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer-icons div {
+        margin-bottom: 4px;
+      }
+
       @media screen and (max-width: 600px) {
+        .card {
+          width: 100% !important;
+          border-radius: 0 !important;
+        }
+
+        .three-columns .column,
+        .footer-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          display: block !important;
+          padding: 0px 0px !important;
+        }
+        .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+        .three-columns .column table {
+          min-height: 0 !important;
+          height: auto !important;
+        }
+
         h1 {
           font-size: 26px !important;
         }
         h2 {
           font-size: 20px !important;
         }
-
-        .card {
-          width: 100% !important;
-          border-radius: 0 !important;
-        }
-        .three-columns .column {
-          width: 100% !important;
-          display: block !important;
-          padding: 10px 0 !important;
+        h2 span {
+          font-size: 18px !important;
         }
         .footer-columns .column {
-          width: 100% !important;
-          display: block !important;
-          padding: 0px 0 !important;
+          padding: 10px 0 !important;
         }
-        .three-columns .column table {
-          min-height: 0 !important;
-          height: auto !important;
+
+        td {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
         }
+
         .social-icons {
           display: inline-block !important;
           justify-content: center !important;
@@ -51,10 +109,12 @@
           margin: 0 auto !important;
           text-align: left !important;
         }
+
         .social-icons tr,
         .social-icons td {
           text-align: left !important;
         }
+
         .footer-heading {
           margin: 10px auto 10px auto !important;
         }
@@ -67,35 +127,35 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      background-color: #edf5f9;
     "
   >
-    <!-- Main Wrapper Table -->
     <table
       width="100%"
-      cellpadding="0"
-      cellspacing="0"
       border="0"
-      bgcolor="#ffffff"
+      cellspacing="0"
+      cellpadding="0"
+      bgcolor="#edf5f9"
     >
       <tr>
-        <td align="center">
-          <!-- Card Table -->
+        <td align="center" style="padding: 20px">
           <table
             class="card"
             width="600"
-            cellpadding="0"
-            cellspacing="0"
             border="0"
+            cellspacing="0"
+            cellpadding="0"
             style="
+              max-width: 600px;
+              margin: auto;
+              background: #ffffff;
               border-radius: 12px;
               overflow: hidden;
-              color: #ffffff;
-              background: linear-gradient(to left, #012262, #3778f6);
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             "
           >
-            <!-- Body -->
-            <tr></tr>
+            <!-- Header -->
+            <!-- Website Logo -->
             <tr>
               <td
                 align="center"
@@ -119,56 +179,76 @@
                 /></a>
               </td>
             </tr>
+            <!-- Main Body Section -->
             <tr>
-              <td align="center" style="padding: 30px 30px; text-align: center">
-                <h1
-                  style="
-                    margin: 0;
-                    font-size: 30px;
-                    line-height: 36px;
-                    font-weight: bold;
-                    color: #ffffff;
-                  "
-                >
-                  The Future of Sustainable Real Estate in Dubai
-                </h1>
-                <p
-                  style="
-                    margin: 25px auto;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
-                    color: #ffffff;
-                  "
-                >
-                  Discover how
-                  <span style="font-family: Verdana">1XL</span> Infra is leading
-                  the way in sustainable construction with eco-friendly designs,
-                  smart technology, and energy-efficient systems that benefit
-                  both residents and investors. With four patents awarded and
-                  seven pending, we are deeply committed to sustainability
-                  through innovative solutions.
-                </p>
-                <a
-                  href="https://infra.1xl.com/about-us"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    background-color: #bf1d2b;
-                    color: #ffffff;
-                    text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                  "
-                >
-                  Learn More
-                </a>
+              <td
+                style="
+                  background: linear-gradient(to left, #012262, #3778f6);
+                  padding: 30px 20px 20px;
+                  margin-bottom: 20px;
+                "
+              >
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center">
+                      <h1
+                        style="
+                          font-size: 30px;
+                          font-weight: 700;
+                          color: white;
+                          margin-bottom: 15px;
+                          text-align: center;
+                          margin-top: 0;
+                        "
+                      >
+                        Freehold vs. Leasehold: Which is Right for You?
+                      </h1>
+                      <p
+                        style="
+                          font-size: 14px;
+                          color: white;
+                          line-height: 1.6;
+                          margin-bottom: 25px;
+                          text-align: center;
+                          max-width: 500px;
+                          margin-left: auto;
+                          margin-right: auto;
+                        "
+                      >
+                        Understand the differences between freehold and
+                        leasehold properties in Dubai. Learn how these ownership
+                        types impact your investment decisions and long-term
+                        goals with
+                        <span style="font-family: Verdana">1XL</span> Infra.
+                      </p>
+                      <a
+                        href="https://Infra.1XL.com/"
+                        target="_blank"
+                        style="
+                          display: inline-block;
+                          background-color: #b01d2b;
+                          color: #ffffff;
+                          padding: 10px 25px;
+                          border-radius: 20px;
+                          text-decoration: none;
+                          font-weight: 700;
+                          font-size: 16px;
+                          margin-top: 20px;
+                          text-align: center;
+                          transition: background 0.3s ease;
+                        "
+                      >
+                        Explore More
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
-            <!-- Premier Projects Section -->
+            <!-- Body -->
+
+            <!-- Key Indicators Section -->
             <tr>
               <td
                 style="
@@ -187,7 +267,7 @@
                     margin-top: 0;
                   "
                 >
-                  Sustainable Living Features
+                  Key Differences Between Freehold and Leasehold
                 </h2>
                 <table
                   class="three-columns"
@@ -230,11 +310,11 @@
                                 margin-top: 0;
                               "
                             >
-                              Energy-Efficient Systems
+                              Ownership Rights
                             </h4>
                             <p
                               style="
-                                font-size: 14px;
+                                font-size: 13px;
                                 color: #5c727d;
                                 line-height: 1.5;
                                 margin: 0;
@@ -243,9 +323,9 @@
                                 hyphens: auto;
                               "
                             >
-                              Our properties incorporate energy-efficient
-                              lighting, climate control, and water management
-                              for reduced environmental impact.
+                              Freehold properties offer full ownership, while
+                              leasehold properties come with a fixed-term,
+                              typically 30–99 years.
                             </p>
                           </td>
                         </tr>
@@ -278,16 +358,16 @@
                               style="
                                 font-size: 18px;
                                 font-weight: bold;
-                                margin-bottom: 30px;
+                                margin-bottom: 11px;
                                 color: #071c1f;
                                 margin-top: 0;
                               "
                             >
-                              Smart Home Automation
+                              Investment Duration
                             </h4>
                             <p
                               style="
-                                font-size: 14px;
+                                font-size: 13px;
                                 color: #5c727d;
                                 line-height: 1.5;
                                 text-align: justify;
@@ -296,9 +376,10 @@
                                 margin: 0;
                               "
                             >
-                              Smart technology allows residents to control their
-                              home environment, optimising energy use and
-                              comfort.
+                              Freehold properties are long-term investments,
+                              providing indefinite ownership, whereas leasehold
+                              investments have a defined duration before
+                              reversion to the landowner.
                             </p>
                           </td>
                         </tr>
@@ -331,16 +412,16 @@
                               style="
                                 font-size: 18px;
                                 font-weight: bold;
+                                margin-bottom: 11px;
                                 color: #071c1f;
-                                margin-bottom: 30px;
                                 margin-top: 0;
                               "
                             >
-                              Eco-Friendly Materials
+                              Property Control
                             </h4>
                             <p
                               style="
-                                font-size: 14px;
+                                font-size: 13px;
                                 color: #5c727d;
                                 line-height: 1.5;
                                 margin: 0;
@@ -349,9 +430,9 @@
                                 hyphens: auto;
                               "
                             >
-                              Sustainable building materials are used to reduce
-                              carbon footprint while enhancing the aesthetic
-                              appeal of properties.
+                              Freehold owners have complete control over the
+                              property, while leasehold owners may face
+                              restrictions after the lease term expires.
                             </p>
                           </td>
                         </tr>
@@ -361,93 +442,86 @@
                 </table>
               </td>
             </tr>
-
-            <!-- Dubai Industrial City Section -->
+            <!-- Commercial Spaces -->
             <tr>
-              <td
-                bgcolor="#ffffff"
-                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
-              >
+              <td align="center" style="padding: 30px 15px">
                 <h2
                   style="
-                    margin: 0;
                     font-size: 24px;
-                    font-weight: bold;
-                    color: #071c1f;
+                    color: #000;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    margin-top: 0;
                   "
                 >
-                  Creating Value Through
-                  <span style="color: #b01d2b; font-weight: bold">
-                    Eco-Friendly</span
-                  >
-                  Practices
+                  <span style="color: #b01d2b">Maximising Rental </span>
+                  Income in Dubai
                 </h2>
                 <p
                   style="
-                    margin: 25px auto;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
                     color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
                   "
                 >
-                  Sustainable construction reduces energy consumption, lowers
-                  operational costs, and promotes environmental conservation.
-                  These practices add long-term value, attracting tenants and
-                  investors who prioritise efficiency, innovation, and
-                  responsibility.
+                  Explore strategies to optimise rental yields, including
+                  location selection, property upgrades, and market trends,
+                  ensuring steady cash flow and long-term investment growth.
                 </p>
               </td>
             </tr>
-
-            <!-- Emerging Investment Areas Section -->
             <tr>
               <td
-                bgcolor="#F2F6F7"
-                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
+                align="center"
+                style="padding: 30px 15px; background-color: #f2f6f7"
               >
                 <h2
                   style="
-                    margin: 0;
                     font-size: 24px;
-                    line-height: 30px;
-                    font-weight: bold;
-                    color: #071c1f;
+                    color: #000;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    margin-top: 0;
                   "
                 >
-                  Our 1234 Philosophy: TGIS
+                  Strategic Investment Areas in Dubai
                 </h2>
                 <p
                   style="
-                    margin: 25px auto 20px;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
                     color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
                   "
                 >
-                  We live by the principles of Trust, Growth, Integrity, and
-                  Sustainability (TGIS). This philosophy is the foundation of
-                  everything we do, guiding us toward creating properties that
-                  foster long-term success and environmental stewardship. Join
-                  us in shaping a sustainable future.
+                  Discover the most lucrative areas for investment, including
+                  Jumeirah Village Circle, Dubai Marina, and Business Bay, where
+                  demand and returns are consistently strong. Unlock the
+                  potential of these strategic areas and start your journey
+                  towards growth with 1XL Infra.
                 </p>
-
                 <a
-                  href="https://infra.1XL.com/projects"
+                  href="https://Infra.1XL.com/"
                   target="_blank"
                   style="
                     display: inline-block;
-                    background-color: #bf1d2b;
+                    background-color: #b01d2b;
                     color: #ffffff;
+                    padding: 10px 25px;
+                    border-radius: 20px;
                     text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    text-align: center;
+                    transition: background 0.3s ease;
                   "
-                >
-                  Discover Our Projects
+                  >Ready to Invest?
                 </a>
               </td>
             </tr>
@@ -506,6 +580,7 @@
                         commercial properties.
                       </p>
                     </td>
+
                     <!-- Column 2: Address -->
                     <td
                       class="column"
@@ -536,6 +611,7 @@
                         74242
                       </p>
                     </td>
+
                     <!-- Column 3: Socials -->
                     <td
                       class="column"
@@ -672,6 +748,7 @@
                     </td>
                   </tr>
                 </table>
+
                 <!-- Copyright -->
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>

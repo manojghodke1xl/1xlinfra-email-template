@@ -1,393 +1,699 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
+      @media screen and (max-width: 600px) {
+        .card {
+          width: 100% !important;
+          border-radius: 0 !important;
+        }
+
+        .three-columns .column,
+        .footer-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          display: block !important;
+          /* text-align: center !important; */
+          padding: 0px 0px !important;
+        }
+
+        .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+
+        .social-h4 {
+          margin-left: 20px !important;
+        }
+
+        .footer-columns .column {
+          padding: 10px 0 !important;
+        }
+
+        td {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .social-icons {
+          display: inline-block !important;
+          justify-content: center !important;
+          align-items: center !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+        }
+
+        .social-icons tr,
+        .social-icons td {
+          text-align: left !important;
+        }
+
+        .footer-heading {
+          margin: 10px auto 10px auto !important;
+        }
+
+        .three-columns .column table {
+          min-height: 0 !important;
+          height: auto !important;
+        }
+        .card-heading,
+        .card-text {
+          display: block !important;
+          width: 100% !important;
+          padding-right: 0 !important;
+        }
+        .card-heading {
+          margin-bottom: 12px !important;
+          text-align: center !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    style="
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
-    }
-
-
-    @media screen and (max-width: 600px) {
-      .card {
-        width: 100% !important;
-        border-radius: 0 !important;
-      }
-
-      .three-columns .column,
-      .footer-columns .column {
-        width: 100% !important;
-        max-width: 100% !important;
-        display: block !important;
-        /* text-align: center !important; */
-        padding: 0px 0px !important;
-      }
-
-      .three-columns .column {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: center !important;
-        padding: 15px 0 !important;
-        box-sizing: border-box;
-      }
-
-      .social-h4 {
-        margin-left: 20px !important;
-      }
-
-      .footer-columns .column {
-
-        padding: 10px 0 !important;
-      }
-
-
-      td {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-      }
-
-      .social-icons {
-        display: inline-block !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin: 0 auto !important;
-        text-align: left !important;
-      }
-
-      .social-icons tr,
-      .social-icons td {
-        text-align: left !important;
-      }
-
-      .footer-heading {
-        margin: 10px auto 10px auto !important;
-      }
-
-      .three-columns .column table {
-        min-height: 0 !important;
-        height: auto !important;
-      }
-    }
-  </style>
-</head>
-
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #ffffff;">
-  <!-- Main Wrapper Table -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-    <tr>
-      <td align="center">
-        <!-- Card Table -->
-        <table class="card" width="600" cellpadding="0" cellspacing="0" border="0"
-          style="border-radius: 12px; overflow: hidden; color: #ffffff; background: linear-gradient(to left, #012262, #3778f6);">
-          <!-- Body -->
-          <tr>
-            <td align="center" style="padding: 35px 20px 0 20px; text-align: center;">
-              <a href="https://Infra.1XL.com/" target="_blank">
-                <img src="{client_logo_url}" alt="Logo" width="120" style="
+    "
+  >
+    <!-- Main Wrapper Table -->
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      bgcolor="#ffffff"
+    >
+      <tr>
+        <td align="center">
+          <!-- Card Table -->
+          <table
+            class="card"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              border-radius: 12px;
+              overflow: hidden;
+              color: #ffffff;
+              background: linear-gradient(to left, #012262, #3778f6);
+            "
+          >
+            <!-- Body -->
+            <tr>
+              <td
+                align="center"
+                style="padding: 35px 20px 0 20px; text-align: center"
+              >
+                <a href="https://Infra.1XL.com/" target="_blank">
+                  <img
+                    src="{client_logo_url}"
+                    alt="Logo"
+                    width="120"
+                    style="
                       max-width: 120px;
                       height: auto;
                       display: block;
                       margin: 0 auto;
-                    " /></a>
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding: 50px 30px; text-align: center;">
+                    "
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 50px 30px; text-align: center">
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 30px;
+                    line-height: 36px;
+                    font-weight: bold;
+                    color: #ffffff;
+                  "
+                >
+                  Invest in Dubai’s Prime Locations for Growth
+                </h1>
+                <p
+                  style="
+                    margin: 25px auto 40px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    max-width: 480px;
+                    color: #ffffff;
+                  "
+                >
+                  Explore the best areas in Dubai for real estate investment.
+                  Discover high-return opportunities with
+                  <span style="font-family: Verdana">1XL</span>
+                  Infra’s strategic projects.
+                </p>
+                <a
+                  href="https://infra.1xl.com/projects"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    background-color: #b01d2b;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 12px 28px;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    font-weight: bold;
+                  "
+                >
+                  Learn More
+                </a>
+              </td>
+            </tr>
 
-              <h1 style="margin: 0; font-size: 30px; line-height: 36px; font-weight: bold; color: #ffffff;">
-                Invest in Dubai’s Prime Locations for Growth
-              </h1>
-              <p style="margin: 25px auto 40px; font-size: 14px; line-height: 24px; max-width: 480px; color: #ffffff;">
-                Explore the best areas in Dubai for real estate investment. Discover high-return opportunities with
-                <span style="font-family: Verdana">1XL</span>
-                Infra’s strategic projects.
-              </p>
-              <a href="https://infra.1xl.com/projects" target="_blank"
-                style="display: inline-block; background-color: #b01d2b;
-    color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 25px; font-size: 14px; font-weight: bold;">
-                Learn More
-              </a>
-            </td>
-          </tr>
+            <!-- Investment Highlights Section 2-->
+            <tr>
+              <td
+                bgcolor="#f2f6f7"
+                align="center"
+                style="padding: 30px 20px 15px 20px"
+              >
+                <table
+                  width="100%"
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="max-width: 600px; margin: 0 auto"
+                >
+                  <!-- Card 1 -->
+                  <tr>
+                    <td bgcolor="#ffffff" style="padding: 25px; color: #071c1f">
+                      <h2
+                        style="
+                          margin: 0 0 15px;
+                          font-size: 20px;
+                          font-weight: bold;
+                          color: #071c1f;
+                          text-align: center;
+                        "
+                        class="card-heading"
+                      >
+                        Dubai Industrial City:
+                        <span style="color: #b01d2b"
+                          >The Future of Investment</span
+                        >
+                      </h2>
+                      <p
+                        style="
+                          margin: 0 0 20px;
+                          font-size: 14px;
+                          line-height: 22px;
+                          color: #5c727d;
+                          text-align: justify;
+                        "
+                      >
+                        Dubai Industrial City is a rapidly developing area
+                        renowned for its strategic location and excellent
+                        connectivity. Offering high potential for both
+                        commercial and residential investments, it is becoming a
+                        key business hub, providing stable returns and long-term
+                        growth.
+                      </p>
+                    </td>
+                  </tr>
 
-          <!-- Dubai Industrial City Section -->
-          <tr>
-            <td bgcolor="#ffffff" style="padding: 30px 30px; text-align: center; color: #071c1f">
-              <h1 style="margin: 0; font-size: 24px; line-height: 36px; font-weight: bold; color: #071c1f">
-                Dubai Industrial City: <span style="color: #b01d2b; font-weight: bold;"> The Future of Investment</span>
-              </h1>
-              <p style="margin: 25px auto 10px; font-size: 14px; line-height: 24px; max-width: 480px; color: #5C727D;text-align: justify;">
-                Dubai Industrial City is a rapidly developing area renowned for its strategic location and excellent connectivity. Offering high potential for both commercial and residential investments, it is rapidly becoming a key business hub, providing stable returns and long-term growth.
-              </p>
-            </td>
-          </tr>
+                  <!-- Spacer Row (Gap Between Cards) -->
+                  <tr>
+                    <td height="15" style="font-size: 0; line-height: 0">
+                      &nbsp;
+                    </td>
+                  </tr>
 
-          <!-- Emerging Investment Areas Section -->
-          <tr>
-            <td bgcolor="#ffffff" style="padding: 0 0 40px 0; text-align: center; color: #071c1f">
-              <h1 style="margin: 0; font-size: 24px; line-height: 30px; font-weight: bold; color: #071c1f">
-                Emerging <span style="color: #b01d2b; font-weight: bold;">Investment </span> Areas
-              </h1>
-              <p style="margin: 25px auto 20px; font-size: 14px; line-height: 24px; max-width: 480px; color: #5C727D;text-align: justify;">
-                As Dubai expands, areas like Dubai South and Al Furjan are emerging as prime investment destinations.
-                These locations offer enhanced infrastructure, superior connectivity, and growing demand for affordable
-                luxury, making them highly attractive for long-term investments.
-              </p>
-              <p style="margin: 20px auto 20px; font-size: 14px; line-height: 24px; max-width: 480px; color: #5C727D;text-align: justify;">
-                <span style="font-family: Verdana">1XL</span> Infra strategically identifies such high-potential areas
-                for our development. Our expertise ensures
-                that you invest in projects with strong growth prospects, helping you achieve maximum returns and secure
-                long-term value.
-              </p>
-              <a href="https://infra.1xl.com/investment-opportunities" target="_blank"
-                style="display: inline-block; background-color: #b01d2b; color: #ffffff; text-decoration: none; padding: 10px 28px; border-radius: 25px; font-size: 14px; font-weight: bold;">
-                Explore our Investment Opportunities
-              </a>
-            </td>
-          </tr>
+                  <!-- Card 2 -->
+                  <tr>
+                    <td bgcolor="#ffffff" style="padding: 25px; color: #071c1f">
+                      <h2
+                        style="
+                          margin: 0 0 15px;
+                          font-size: 20px;
+                          font-weight: bold;
+                          color: #071c1f;
+                          text-align: center;
+                        "
+                        class="card-heading"
+                      >
+                        Emerging
+                        <span style="color: #b01d2b">Investment</span> Areas
+                      </h2>
+                      <p
+                        style="
+                          margin: 0 0 20px;
+                          font-size: 14px;
+                          line-height: 22px;
+                          color: #5c727d;
+                          text-align: justify;
+                        "
+                      >
+                        As Dubai expands, areas like Dubai South and Al Furjan
+                        are emerging as prime investment destinations. These
+                        locations offer enhanced infrastructure, superior
+                        connectivity, and growing demand for affordable luxury.
+                      </p>
+                      <p
+                        style="
+                          margin: 0 0 20px;
+                          font-size: 14px;
+                          line-height: 22px;
+                          color: #5c727d;
+                          text-align: justify;
+                        "
+                      >
+                        <span style="font-family: Verdana">1XL</span> Infra
+                        strategically identifies such high-potential areas. Our
+                        expertise ensures you invest in projects with strong
+                        growth prospects and long-term value.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <div style="text-align: center; margin: 25px 0 0 0">
+                  <a
+                    href="https://infra.1xl.com/investment-opportunities"
+                    target="_blank"
+                    style="
+                      display: inline-block;
+                      background-color: #b01d2b;
+                      color: #ffffff;
+                      text-decoration: none;
+                      padding: 10px 28px;
+                      border-radius: 25px;
+                      font-size: 14px;
+                      font-weight: bold;
+                    "
+                  >
+                    Explore our Investment Opportunities
+                  </a>
+                </div>
+              </td>
+            </tr>
 
-          <!-- Premier Projects Section -->
+            <!-- Premier Projects Section -->
 
-          <tr>
-            <td style="
-                  padding: 25px 20px;
+            <tr>
+              <td
+                style="
+                  padding: 20px 20px;
                   text-align: center;
-                  background-color: #F2F6F7;
-    color: #ffffff;
-                ">
-              <h2 style="
+                  background-color: #f2f6f7;
+                  color: #ffffff;
+                "
+              >
+                <h2
+                  style="
                     font-size: 24px;
                     color: #071c1f;
                     font-weight: 600;
                     margin-bottom: 20px;
                     margin-top: 0;
-                  ">
-                <span style="font-family: Verdana;font-size: 22px;">1XL</span> Infra’s Exclusive Projects
-              </h2>
-              <table class="three-columns" width="100%" border="0" cellspacing="0" cellpadding="0"
-                style="table-layout: fixed">
-                <tr>
-                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                  "
+                >
+                  <span style="font-family: Verdana; font-size: 22px">1XL</span>
+                  Infra’s Exclusive Projects
+                </h2>
+                <table
+                  class="three-columns"
+                  width="100%"
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="table-layout: fixed"
+                >
+                  <tr>
+                    <td
+                      class="column"
+                      width="33.33%"
+                      valign="top"
+                      style="padding: 10px"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
                           background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-                          min-height: 190px;
-                        ">
-                      <tr>
-                        <td style="padding: 20px;vertical-align: top;">
-                          <h4 style="
+                          min-height: 170px;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 20px; vertical-align: top">
+                            <h4
+                              style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 10px;
                                 color: #071c1f;
                                 margin-top: 0;
-                              ">
-                            Emerald Tower
-                          </h4>
-                          <p style="
-                                font-size: 14px;
-                                color: #5C727D;
+                              "
+                            >
+                              Emerald Tower
+                            </h4>
+                            <p
+                              style="
+                                font-size: 13px;
+                                color: #5c727d;
                                 line-height: 1.5;
                                 margin: 0;
-                                text-align:justify; 
-                                text-justify: inter-word; 
+                                text-align: justify;
+                                text-justify: inter-word;
                                 hyphens: auto;
-                              ">
-                            An upcoming development in Dubai Industrial City featuring 87 studios, 60 one-bedroom, and
-                            60 two-bedroom apartments.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td class="column" width="33.33%" valign="top" style="padding: 10px">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="
+                              "
+                            >
+                              An upcoming development in Dubai Industrial City
+                              featuring 87 studios, 60 one-bedroom, and 60
+                              two-bedroom apartments.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      class="column"
+                      width="33.33%"
+                      valign="top"
+                      style="padding: 10px"
+                    >
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
                           background-color: #fff;
                           padding: 10px;
                           text-align: center;
                           height: 100%;
-min-height: 200px;
-                        ">
-                      <tr>
-                        <td style="padding: 20px;vertical-align: top ;">
-                          <h4 style="
+                          min-height: 170px;
+                        "
+                      >
+                        <tr>
+                          <td style="padding: 20px; vertical-align: top">
+                            <h4
+                              style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 margin-bottom: 11px;
                                 color: #071c1f;
                                 margin-top: 0;
-                              ">
-                            Sapphire
-                          </h4>
-                          <p style="
-                                font-size: 14px;
-                                color: #5C727D;
+                              "
+                            >
+                              Sapphire
+                            </h4>
+                            <p
+                              style="
+                                font-size: 13px;
+                                color: #5c727d;
                                 line-height: 1.5;
-                                text-align:justify; 
-                                text-justify: inter-word; 
+                                text-align: justify;
+                                text-justify: inter-word;
                                 hyphens: auto;
-                                margin: 0;
-                              ">
-                            A ready-to-move-in development in Dubai Industrial City, featuring 88 studio apartments and
-                            7 two-bedroom apartments.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+                                margin: 0 auto;
+                              "
+                            >
+                              A ready-to-move-in development in Dubai Industrial
+                              City, featuring 88 studio apartments and 7
+                              two-bedroom apartments.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-          <!-- Footer Section -->
-          <tr>
-            <td style="
+            <!-- Footer Section -->
+            <tr>
+              <td
+                style="
                   padding: 20px 30px 20px 50px;
                   text-align: center;
                   font-size: 12px;
                   color: #000000;
                   background-color: #eceaea;
-                ">
-              <table class="footer-columns" width="100%" align="center" cellpadding="0" cellspacing="0" border="0"
-                style="margin: 0 auto; text-align: center">
-                <tr style="max-width: 100%">
-                  <!-- Column 1: About -->
-                  <td class="column" width="45%" valign="top" style="padding: 10px; text-align: left">
-                    <h4 class="footer-heading" style="
+                "
+              >
+                <table
+                  class="footer-columns"
+                  width="100%"
+                  align="center"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="margin: 0 auto; text-align: center"
+                >
+                  <tr style="max-width: 100%">
+                    <!-- Column 1: About -->
+                    <td
+                      class="column"
+                      width="45%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
                           margin: 15px 0 5px 0;
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
-                        ">
-                      About Us
-                    </h4>
-                    <p style="
+                        "
+                      >
+                        About Us
+                      </h4>
+                      <p
+                        style="
                           margin: 0;
                           font-size: 12px;
                           line-height: 20px;
                           color: #000000;
                           text-align: justify;
-                        ">
-                      <span style="font-family: Verdana">1XL</span>
-                      Infra is a leading real estate development company in
-                      Dubai, known for delivering high value residential and
-                      commercial properties.
-                    </p>
-                  </td>
-                  <!-- Column 2: Address -->
-                  <td class="column" width="45%" valign="top" style="padding: 10px; text-align: left">
-                    <h4 class="footer-heading" style="
+                        "
+                      >
+                        <span style="font-family: Verdana">1XL</span>
+                        Infra is a leading real estate development company in
+                        Dubai, known for delivering high value residential and
+                        commercial properties.
+                      </p>
+                    </td>
+                    <!-- Column 2: Address -->
+                    <td
+                      class="column"
+                      width="45%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
                           margin: 15px 0 5px 0;
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
-                        ">
-                      Address
-                    </h4>
-                    <p style="
+                        "
+                      >
+                        Address
+                      </h4>
+                      <p
+                        style="
                           margin: 0;
                           font-size: 12px;
                           line-height: 20px;
                           color: #000000;
-                        ">
-                      Floor 141, Burj Khalifa, Dubai.<br />P.O. Box No. -
-                      74242
-                    </p>
-                  </td>
-                  <!-- Column 3: Socials -->
-                  <td class="column" width="10%" valign="top" style="padding: 10px; text-align: left">
-                    <h4 class="footer-heading" style="
+                        "
+                      >
+                        Floor 141, Burj Khalifa, Dubai.<br />P.O. Box No. -
+                        74242
+                      </p>
+                    </td>
+                    <!-- Column 3: Socials -->
+                    <td
+                      class="column"
+                      width="10%"
+                      valign="top"
+                      style="padding: 10px; text-align: left"
+                    >
+                      <h4
+                        class="footer-heading"
+                        style="
                           margin: 15px 0 5px 0;
                           font-size: 14px;
                           text-transform: uppercase;
                           color: #002263;
-                        ">
-                      Our Socials
-                    </h4>
-                    <table class="social-icons" cellpadding="0" cellspacing="0" border="0" align="center"
-                      style="margin: 0 auto; text-align: center">
-                      <tr>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.instagram.com/1XLInfra/" target="_blank">
-                            <img src="{instagram}" alt="Instagram" style="display: block" title="Instagram" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.linkedin.com/company/1XLInfra/" target="_blank">
-                            <img src="{linkedin}" alt="LinkedIn" style="display: block" title="LinkedIn" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.facebook.com/1XLInfra/" target="_blank">
-                            <img src="{facebook}" alt="Facebook" style="display: block" title="Facebook" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.youtube.com/@1XLInfra/" target="_blank">
-                            <img src="{youtube}" alt="YouTube" style="display: block" title="YouTube" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://x.com/1XLInfra/" target="_blank">
-                            <img src="{x}" alt="X" style="display: block" title="X" width="18px" height="18px" />
-                          </a>
-                        </td>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.threads.com/@1XLInfra/" target="_blank">
-                            <img src="{threads}" alt="Threads" style="display: block" title="Threads" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                        <td style="padding: 0 15px 10px 0">
-                          <a href="https://www.pinterest.com/1XLInfra/" target="_blank">
-                            <img src="{pinterest}" alt="Pinterest" style="display: block" title="Pinterest" width="18px"
-                              height="18px" />
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!-- Copyright -->
-              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td style="
+                        "
+                      >
+                        Our Socials
+                      </h4>
+                      <table
+                        class="social-icons"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        align="center"
+                        style="margin: 0 auto; text-align: center"
+                      >
+                        <tr>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.instagram.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{instagram}"
+                                alt="Instagram"
+                                style="display: block"
+                                title="Instagram"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.linkedin.com/company/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{linkedin}"
+                                alt="LinkedIn"
+                                style="display: block"
+                                title="LinkedIn"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.facebook.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{facebook}"
+                                alt="Facebook"
+                                style="display: block"
+                                title="Facebook"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.youtube.com/@1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{youtube}"
+                                alt="YouTube"
+                                style="display: block"
+                                title="YouTube"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 0 15px 10px 0">
+                            <a href="https://x.com/1XLInfra/" target="_blank">
+                              <img
+                                src="{x}"
+                                alt="X"
+                                style="display: block"
+                                title="X"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.threads.com/@1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{threads}"
+                                alt="Threads"
+                                style="display: block"
+                                title="Threads"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                          <td style="padding: 0 15px 10px 0">
+                            <a
+                              href="https://www.pinterest.com/1XLInfra/"
+                              target="_blank"
+                            >
+                              <img
+                                src="{pinterest}"
+                                alt="Pinterest"
+                                style="display: block"
+                                title="Pinterest"
+                                width="18px"
+                                height="18px"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Copyright -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td
+                      style="
                         padding: 18px 0 0 0;
                         text-align: center;
                         font-size: 12px;
                         color: #000000;
                         border-top: 1px solid #222;
-                      ">
-                    ©
-                    <a href="https://{web_address}" target="_blank"
-                      style="color: #000000; text-decoration: none">Infra.<span
-                        style="font-family: Verdana">1XL</span>.com</a>. All Rights Reserved.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-
+                      "
+                    >
+                      ©
+                      <a
+                        href="https://{web_address}"
+                        target="_blank"
+                        style="color: #000000; text-decoration: none"
+                        >Infra.<span style="font-family: Verdana">1XL</span
+                        >.com</a
+                      >. All Rights Reserved.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

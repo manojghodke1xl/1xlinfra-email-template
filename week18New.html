@@ -1,49 +1,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style>
       body {
         margin: 0;
-        padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #ffffff;
+        background-color: #f3f2ef;
       }
+
+      .container {
+        padding: 20px;
+        background-color: #edf5f9;
+      }
+
+      .card {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
       .footer {
         background-color: #3778f6;
         text-align: center;
         font-size: 12px;
         color: #ffffff;
-        padding: 10px 6px;
-        border-radius: 0 0 15px 15px;
+        padding: 12px 6px;
       }
+
+      .social_btns a {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin: 7px;
+        text-align: center;
+        line-height: 28px;
+        vertical-align: middle;
+      }
+
+      .social_btns img {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+
+      .footer-icons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer-icons div {
+        margin-bottom: 4px;
+      }
+
       @media screen and (max-width: 600px) {
+        .card {
+          width: 100% !important;
+          border-radius: 0 !important;
+        }
+
+        .three-columns .column,
+        .footer-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+          display: block !important;
+          padding: 0px 0px !important;
+        }
+        .three-columns .column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+          padding: 15px 0 !important;
+          box-sizing: border-box;
+        }
+        .three-columns .column table {
+          min-height: 0 !important;
+          height: auto !important;
+        }
+
         h1 {
           font-size: 26px !important;
         }
         h2 {
           font-size: 20px !important;
         }
-
-        .card {
-          width: 100% !important;
-          border-radius: 0 !important;
-        }
-        .three-columns .column {
-          width: 100% !important;
-          display: block !important;
-          padding: 10px 0 !important;
+        h2 span {
+          font-size: 18px !important;
         }
         .footer-columns .column {
-          width: 100% !important;
-          display: block !important;
-          padding: 0px 0 !important;
+          padding: 10px 0 !important;
         }
-        .three-columns .column table {
-          min-height: 0 !important;
-          height: auto !important;
+
+        td {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
         }
+
         .social-icons {
           display: inline-block !important;
           justify-content: center !important;
@@ -51,10 +109,12 @@
           margin: 0 auto !important;
           text-align: left !important;
         }
+
         .social-icons tr,
         .social-icons td {
           text-align: left !important;
         }
+
         .footer-heading {
           margin: 10px auto 10px auto !important;
         }
@@ -67,35 +127,35 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      background-color: #edf5f9;
     "
   >
-    <!-- Main Wrapper Table -->
     <table
       width="100%"
-      cellpadding="0"
-      cellspacing="0"
       border="0"
-      bgcolor="#ffffff"
+      cellspacing="0"
+      cellpadding="0"
+      bgcolor="#edf5f9"
     >
       <tr>
-        <td align="center">
-          <!-- Card Table -->
+        <td align="center" style="padding: 20px">
           <table
             class="card"
             width="600"
-            cellpadding="0"
-            cellspacing="0"
             border="0"
+            cellspacing="0"
+            cellpadding="0"
             style="
+              max-width: 600px;
+              margin: auto;
+              background: #ffffff;
               border-radius: 12px;
               overflow: hidden;
-              color: #ffffff;
-              background: linear-gradient(to left, #012262, #3778f6);
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             "
           >
-            <!-- Body -->
-            <tr></tr>
+            <!-- Header -->
+            <!-- Website Logo -->
             <tr>
               <td
                 align="center"
@@ -119,335 +179,214 @@
                 /></a>
               </td>
             </tr>
-            <tr>
-              <td align="center" style="padding: 30px 30px; text-align: center">
-                <h1
-                  style="
-                    margin: 0;
-                    font-size: 30px;
-                    line-height: 36px;
-                    font-weight: bold;
-                    color: #ffffff;
-                  "
-                >
-                  The Future of Sustainable Real Estate in Dubai
-                </h1>
-                <p
-                  style="
-                    margin: 25px auto;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
-                    color: #ffffff;
-                  "
-                >
-                  Discover how
-                  <span style="font-family: Verdana">1XL</span> Infra is leading
-                  the way in sustainable construction with eco-friendly designs,
-                  smart technology, and energy-efficient systems that benefit
-                  both residents and investors. With four patents awarded and
-                  seven pending, we are deeply committed to sustainability
-                  through innovative solutions.
-                </p>
-                <a
-                  href="https://infra.1xl.com/about-us"
-                  target="_blank"
-                  style="
-                    display: inline-block;
-                    background-color: #bf1d2b;
-                    color: #ffffff;
-                    text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
-                  "
-                >
-                  Learn More
-                </a>
-              </td>
-            </tr>
-
-            <!-- Premier Projects Section -->
+            <!-- Main Body Section -->
             <tr>
               <td
                 style="
-                  padding: 25px 20px;
-                  text-align: center;
-                  background-color: #f2f6f7;
-                  color: #ffffff;
+                  background: linear-gradient(to left, #012262, #3778f6);
+                  padding: 30px 20px 20px;
+                  margin-bottom: 20px;
                 "
               >
-                <h2
-                  style="
-                    font-size: 24px;
-                    color: #071c1f;
-                    font-weight: bold;
-                    margin-bottom: 20px;
-                    margin-top: 0;
-                  "
-                >
-                  Sustainable Living Features
-                </h2>
-                <table
-                  class="three-columns"
-                  width="100%"
-                  border="0"
-                  cellspacing="0"
-                  cellpadding="0"
-                  style="table-layout: fixed"
-                >
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
+                    <td align="center">
+                      <h1
                         style="
-                          background-color: #fff;
-                          border: 1px solid #e6e6e6;
-
-                          padding: 10px;
+                          font-size: 30px;
+                          color: white;
+                          margin-bottom: 15px;
                           text-align: center;
-                          height: 100%;
-                          min-height: 300px;
+                          margin-top: 0;
                         "
                       >
-                        <tr>
-                          <td style="padding: 10px; vertical-align: top">
-                            <h4
-                              style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 10px;
-                                color: #071c1f;
-                                margin-top: 0;
-                              "
-                            >
-                              Energy-Efficient Systems
-                            </h4>
-                            <p
-                              style="
-                                font-size: 14px;
-                                color: #5c727d;
-                                line-height: 1.5;
-                                margin: 0;
-                                text-align: justify;
-                                text-justify: inter-word;
-                                hyphens: auto;
-                              "
-                            >
-                              Our properties incorporate energy-efficient
-                              lighting, climate control, and water management
-                              for reduced environmental impact.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
+                        From Dream Home to Reality with
+                        <span style="font-family: Verdana; font-size: 28px"
+                          >1XL</span
+                        >
+                        Infra
+                      </h1>
+                      <p
                         style="
-                          background-color: #fff;
-                          border: 1px solid #e6e6e6;
-
-                          padding: 10px;
+                          font-size: 14px;
+                          color: white;
+                          line-height: 1.6;
+                          margin-bottom: 25px;
                           text-align: center;
-                          height: 100%;
-                          min-height: 300px;
+                          max-width: 500px;
+                          margin-left: auto;
+                          margin-right: auto;
                         "
                       >
-                        <tr>
-                          <td style="padding: 10px; vertical-align: top">
-                            <h4
-                              style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                margin-bottom: 30px;
-                                color: #071c1f;
-                                margin-top: 0;
-                              "
-                            >
-                              Smart Home Automation
-                            </h4>
-                            <p
-                              style="
-                                font-size: 14px;
-                                color: #5c727d;
-                                line-height: 1.5;
-                                text-align: justify;
-                                text-justify: inter-word;
-                                hyphens: auto;
-                                margin: 0;
-                              "
-                            >
-                              Smart technology allows residents to control their
-                              home environment, optimising energy use and
-                              comfort.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td
-                      class="column"
-                      width="33.33%"
-                      valign="top"
-                      style="padding: 10px"
-                    >
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
+                        Discover how one family’s journey to find their perfect
+                        home with
+                        <span style="font-family: Verdana">1XL</span> Infra
+                        transformed their lifestyle. Experience quality living
+                        and smart investments in our premium properties.
+                      </p>
+                      <a
+                        href="https://infra.1xl.com/"
+                        target="_blank"
                         style="
-                          background-color: #fff;
-                          border: 1px solid #e6e6e6;
-
-                          padding: 10px;
+                          display: inline-block;
+                          background-color: #b01d2b;
+                          color: #ffffff;
+                          padding: 10px 25px;
+                          border-radius: 20px;
+                          text-decoration: none;
+                          font-weight: 700;
+                          font-size: 16px;
+                          margin-top: 20px;
                           text-align: center;
-                          height: 100%;
-                          min-height: 300px;
+                          transition: background 0.3s ease;
                         "
                       >
-                        <tr>
-                          <td style="padding: 10px; vertical-align: top">
-                            <h4
-                              style="
-                                font-size: 18px;
-                                font-weight: bold;
-                                color: #071c1f;
-                                margin-bottom: 30px;
-                                margin-top: 0;
-                              "
-                            >
-                              Eco-Friendly Materials
-                            </h4>
-                            <p
-                              style="
-                                font-size: 14px;
-                                color: #5c727d;
-                                line-height: 1.5;
-                                margin: 0;
-                                text-align: justify;
-                                text-justify: inter-word;
-                                hyphens: auto;
-                              "
-                            >
-                              Sustainable building materials are used to reduce
-                              carbon footprint while enhancing the aesthetic
-                              appeal of properties.
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
+                        Start Your Journey
+                      </a>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
 
+            <!-- Body -->
             <!-- Dubai Industrial City Section -->
             <tr>
-              <td
-                bgcolor="#ffffff"
-                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
-              >
+              <td align="center" style="padding: 30px 15px">
                 <h2
                   style="
-                    margin: 0;
                     font-size: 24px;
+                    color: #000;
+                    margin-bottom: 12px;
                     font-weight: bold;
-                    color: #071c1f;
+                    margin-top: 0;
                   "
                 >
-                  Creating Value Through
-                  <span style="color: #b01d2b; font-weight: bold">
-                    Eco-Friendly</span
-                  >
-                  Practices
+                  Finding a Home that Fits Their Needs
                 </h2>
                 <p
                   style="
-                    margin: 25px auto;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
                     color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
                   "
                 >
-                  Sustainable construction reduces energy consumption, lowers
-                  operational costs, and promotes environmental conservation.
-                  These practices add long-term value, attracting tenants and
-                  investors who prioritise efficiency, innovation, and
-                  responsibility.
+                  The family sought more than just a house – they wanted a space
+                  that felt like home. After exploring various options, they
+                  found <span style="font-family: Verdana">1XL</span> Infra’s
+                  Sapphire and Emerald Tower to be the perfect fit, combining
+                  modern design, quality construction, and a prime location for
+                  their lifestyle.
                 </p>
               </td>
             </tr>
-
             <!-- Emerging Investment Areas Section -->
             <tr>
               <td
-                bgcolor="#F2F6F7"
-                style="padding: 30px 30px; text-align: center; color: #0e0e0e"
+                align="center"
+                style="padding: 30px 15px; background-color: #f2f6f7"
               >
                 <h2
                   style="
-                    margin: 0;
                     font-size: 24px;
-                    line-height: 30px;
+                    color: #000;
+                    margin-bottom: 12px;
+                    margin-top: 0;
                     font-weight: bold;
-                    color: #071c1f;
                   "
                 >
-                  Our 1234 Philosophy: TGIS
+                  Why
+                  <span style="color: #b01d2b">
+                    <span style="font-family: Verdana; font-size: 22px"
+                      >1XL</span
+                    >
+                    Infra
+                  </span>
+                  Was Their Trusted Choice
                 </h2>
                 <p
                   style="
-                    margin: 25px auto 20px;
-                    font-size: 14px;
-                    line-height: 24px;
-                    max-width: 480px;
                     color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
                   "
                 >
-                  We live by the principles of Trust, Growth, Integrity, and
-                  Sustainability (TGIS). This philosophy is the foundation of
-                  everything we do, guiding us toward creating properties that
-                  foster long-term success and environmental stewardship. Join
-                  us in shaping a sustainable future.
+                  After reviewing multiple options, the family chose
+                  <span style="font-family: Verdana">1XL</span> Infra for its
+                  transparency, personalised service, and reputation for
+                  quality. Our team worked closely with them to ensure their
+                  dream home aligned with both their lifestyle and investment
+                  goals, making the decision easy.
                 </p>
-
+              </td>
+            </tr>
+            <!-- Premier Projects Section -->
+            <tr>
+              <td align="center" style="padding: 30px 15px">
+                <h2
+                  style="
+                    font-size: 24px;
+                    color: #000;
+                    margin-bottom: 12px;
+                    font-weight: bold;
+                    margin-top: 0;
+                  "
+                >
+                  Transforming Their Everyday Living
+                </h2>
+                <p
+                  style="
+                    color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
+                  "
+                >
+                  Since moving into their new
+                  <span style="font-family: Verdana">1XL</span> Infra home, the
+                  family’s daily life has been transformed. The spacious, modern
+                  layout has given them more room for family activities, while
+                  the smart home features have enhanced convenience and comfort.
+                </p>
+                <p
+                  style="
+                    color: #5c727d;
+                    font-size: 14px;
+                    line-height: 1.6;
+                    max-width: 500px;
+                    margin: 10px auto;
+                    text-align: center;
+                  "
+                >
+                  The peaceful environment and proximity to key amenities have
+                  also significantly improved their quality of life, making
+                  their new home a perfect blend of luxury and practicality.
+                </p>
                 <a
-                  href="https://infra.1XL.com/projects"
+                  href="https://Infra.1XL.com/"
                   target="_blank"
                   style="
                     display: inline-block;
-                    background-color: #bf1d2b;
+                    background-color: #b01d2b;
                     color: #ffffff;
+                    padding: 10px 25px;
+                    border-radius: 20px;
                     text-decoration: none;
-                    padding: 12px 28px;
-                    border-radius: 25px;
-                    font-size: 14px;
-                    font-weight: bold;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    text-align: center;
+                    transition: background 0.3s ease;
                   "
-                >
-                  Discover Our Projects
+                  >Discover More
                 </a>
               </td>
             </tr>
@@ -506,6 +445,7 @@
                         commercial properties.
                       </p>
                     </td>
+
                     <!-- Column 2: Address -->
                     <td
                       class="column"
@@ -536,6 +476,7 @@
                         74242
                       </p>
                     </td>
+
                     <!-- Column 3: Socials -->
                     <td
                       class="column"
@@ -672,6 +613,7 @@
                     </td>
                   </tr>
                 </table>
+
                 <!-- Copyright -->
                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
                   <tr>
